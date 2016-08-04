@@ -8,7 +8,8 @@
  - Storyboarding & other set-up stuff 
     The first thing I did was delete the existing Game View Controller because we don't want it right now. I then created two new view controllers and named one Start Screen (which will hold the start button) and another the Running Screen (which will have our lion animation). 
     I then dragged the ViewController.swift file from the StartScreen project into this project and changed the class of the Start Screen View Controller to ViewController, linking the screen and this view controller. I created a button called "Tap to start ROARDASH" and connected this button via Show Detail Segue to the RunningScreen. 
-    I've decided to 
+    I then replaced all the code in the GameScene.swift in this project with the code from GameScene.swift in the LionAnimation.
+    I then changed the class name of the RunningScreen View Controller to the GameViewController, linking it to the GameViewController.
  
  */
 //  Created by Girls Who Code on 8/4/16.

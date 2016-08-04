@@ -36,7 +36,7 @@
         <!--RunningScreen-->
         <scene sceneID="qVW-pr-4Eo">
             <objects>
-                <viewController id="psg-od-yUk" userLabel="RunningScreen" sceneMemberID="viewController">
+                <viewController id="psg-od-yUk" userLabel="RunningScreen" customClass="GameViewController" customModule="Master_Project___Roardash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o3w-w0-Daf"/>
                         <viewControllerLayoutGuide type="bottom" id="x37-ba-UE9"/>
