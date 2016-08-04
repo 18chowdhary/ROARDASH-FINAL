@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CCC2ADBE1D53ABAC00740559 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2ADBD1D53ABAC00740559 /* AppDelegate.swift */; };
-		CCC2ADC01D53ABAC00740559 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CCC2ADBF1D53ABAC00740559 /* GameScene.sks */; };
 		CCC2ADC21D53ABAC00740559 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2ADC11D53ABAC00740559 /* GameScene.swift */; };
 		CCC2ADC41D53ABAC00740559 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2ADC31D53ABAC00740559 /* GameViewController.swift */; };
 		CCC2ADC71D53ABAC00740559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC2ADC51D53ABAC00740559 /* Main.storyboard */; };
@@ -17,6 +16,8 @@
 		CCC2ADD71D53ABAC00740559 /* Master_Project___RoardashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2ADD61D53ABAC00740559 /* Master_Project___RoardashTests.swift */; };
 		CCC2ADE21D53ABAC00740559 /* Master_Project___RoardashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2ADE11D53ABAC00740559 /* Master_Project___RoardashUITests.swift */; };
 		CCC2ADF01D53ACA200740559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2ADEF1D53ACA200740559 /* ViewController.swift */; };
+		CCE0C0F41D53B95A000E2943 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE0C0F31D53B95A000E2943 /* lion_icon.png */; };
+		CCE0C0F61D53B960000E2943 /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCE0C0F51D53B960000E2943 /* user_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 /* Begin PBXFileReference section */
 		CCC2ADBA1D53ABAC00740559 /* Master Project - Roardash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Master Project - Roardash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC2ADBD1D53ABAC00740559 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCC2ADBF1D53ABAC00740559 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		CCC2ADC11D53ABAC00740559 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CCC2ADC31D53ABAC00740559 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CCC2ADC61D53ABAC00740559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		CCC2ADE11D53ABAC00740559 /* Master_Project___RoardashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Master_Project___RoardashUITests.swift"; sourceTree = "<group>"; };
 		CCC2ADE31D53ABAC00740559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCC2ADEF1D53ACA200740559 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCE0C0F31D53B95A000E2943 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
+		CCE0C0F51D53B960000E2943 /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +107,12 @@
 			children = (
 				CCC2ADEF1D53ACA200740559 /* ViewController.swift */,
 				CCC2ADBD1D53ABAC00740559 /* AppDelegate.swift */,
-				CCC2ADBF1D53ABAC00740559 /* GameScene.sks */,
 				CCC2ADC11D53ABAC00740559 /* GameScene.swift */,
 				CCC2ADC31D53ABAC00740559 /* GameViewController.swift */,
 				CCC2ADC51D53ABAC00740559 /* Main.storyboard */,
 				CCC2ADC81D53ABAC00740559 /* Assets.xcassets */,
+				CCE0C0F31D53B95A000E2943 /* lion_icon.png */,
+				CCE0C0F51D53B960000E2943 /* user_icon.png */,
 				CCC2ADCA1D53ABAC00740559 /* LaunchScreen.storyboard */,
 				CCC2ADCD1D53ABAC00740559 /* Info.plist */,
 			);
@@ -238,10 +241,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCC2ADC01D53ABAC00740559 /* GameScene.sks in Resources */,
 				CCC2ADCC1D53ABAC00740559 /* LaunchScreen.storyboard in Resources */,
 				CCC2ADC91D53ABAC00740559 /* Assets.xcassets in Resources */,
+				CCE0C0F41D53B95A000E2943 /* lion_icon.png in Resources */,
 				CCC2ADC71D53ABAC00740559 /* Main.storyboard in Resources */,
+				CCE0C0F61D53B960000E2943 /* user_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +502,7 @@
 				CCC2ADE81D53ABAC00740559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCC2ADE91D53ABAC00740559 /* Build configuration list for PBXNativeTarget "Master Project - RoardashTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				CCC2ADEB1D53ABAC00740559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCC2ADEC1D53ABAC00740559 /* Build configuration list for PBXNativeTarget "Master Project - RoardashUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +520,7 @@
 				CCC2ADEE1D53ABAC00740559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
