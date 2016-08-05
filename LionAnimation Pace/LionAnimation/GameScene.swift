@@ -19,7 +19,6 @@ class GameScene: SKScene {
     let lionBottom = SKSpriteNode(imageNamed: "lion_icon")
     let user = SKSpriteNode(imageNamed: "user_icon")
     
-    
     override func didMoveToView(view: SKView) {
         
         // Making lion appear on the screen
@@ -63,6 +62,7 @@ class GameScene: SKScene {
             lionTop.hidden = true
             lionMid.hidden = true
             lionBottom.hidden = false
+//            try myAudioPlayer(co)
         }
         
         // Shows all lions

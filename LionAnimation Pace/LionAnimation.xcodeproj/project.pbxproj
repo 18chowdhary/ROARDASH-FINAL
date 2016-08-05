@@ -18,6 +18,8 @@
 		CCC2ADA01D53A8C300740559 /* LionAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2AD9F1D53A8C300740559 /* LionAnimationUITests.swift */; };
 		CCC2ADAE1D53A99000740559 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC2ADAD1D53A99000740559 /* lion_icon.png */; };
 		CCC2ADB01D53A99600740559 /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC2ADAF1D53A99600740559 /* user_icon.png */; };
+		CCF772911D550BA70076C74E /* lion_roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCF772901D550BA70076C74E /* lion_roar.mp3 */; };
+		CCF772931D5519990076C74E /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF772921D5519990076C74E /* SoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		CCC2ADA11D53A8C300740559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCC2ADAD1D53A99000740559 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
 		CCC2ADAF1D53A99600740559 /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
+		CCF772901D550BA70076C74E /* lion_roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = lion_roar.mp3; path = ../../../../Desktop/lion_roar.mp3; sourceTree = "<group>"; };
+		CCF772921D5519990076C74E /* SoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +113,11 @@
 				CCC2AD7D1D53A8C300740559 /* GameScene.sks */,
 				CCC2AD7F1D53A8C300740559 /* GameScene.swift */,
 				CCC2AD811D53A8C300740559 /* GameViewController.swift */,
+				CCF772921D5519990076C74E /* SoundViewController.swift */,
 				CCC2AD831D53A8C300740559 /* Main.storyboard */,
 				CCC2ADAD1D53A99000740559 /* lion_icon.png */,
 				CCC2ADAF1D53A99600740559 /* user_icon.png */,
+				CCF772901D550BA70076C74E /* lion_roar.mp3 */,
 				CCC2AD861D53A8C300740559 /* Assets.xcassets */,
 				CCC2AD881D53A8C300740559 /* LaunchScreen.storyboard */,
 				CCC2AD8B1D53A8C300740559 /* Info.plist */,
@@ -243,6 +249,7 @@
 			files = (
 				CCC2AD7E1D53A8C300740559 /* GameScene.sks in Resources */,
 				CCC2AD8A1D53A8C300740559 /* LaunchScreen.storyboard in Resources */,
+				CCF772911D550BA70076C74E /* lion_roar.mp3 in Resources */,
 				CCC2AD871D53A8C300740559 /* Assets.xcassets in Resources */,
 				CCC2ADB01D53A99600740559 /* user_icon.png in Resources */,
 				CCC2AD851D53A8C300740559 /* Main.storyboard in Resources */,
@@ -271,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF772931D5519990076C74E /* SoundViewController.swift in Sources */,
 				CCC2AD801D53A8C300740559 /* GameScene.swift in Sources */,
 				CCC2AD821D53A8C300740559 /* GameViewController.swift in Sources */,
 				CCC2AD7C1D53A8C300740559 /* AppDelegate.swift in Sources */,
@@ -502,6 +510,7 @@
 				CCC2ADA61D53A8C300740559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCC2ADA71D53A8C300740559 /* Build configuration list for PBXNativeTarget "LionAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +519,7 @@
 				CCC2ADA91D53A8C300740559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCC2ADAA1D53A8C300740559 /* Build configuration list for PBXNativeTarget "LionAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +528,7 @@
 				CCC2ADAC1D53A8C300740559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
