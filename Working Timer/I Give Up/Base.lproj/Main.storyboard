@@ -36,7 +36,7 @@
         <!--Program-->
         <scene sceneID="v7b-5A-eKj">
             <objects>
-                <viewController id="52u-dp-mEK" userLabel="Program" customClass="SWViewController" customModule="I_Give_Up" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="52u-dp-mEK" userLabel="Program" customClass="SWViewController" customModule="Working_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lng-wx-DmJ"/>
                         <viewControllerLayoutGuide type="bottom" id="ytN-OM-c3c"/>
@@ -45,10 +45,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBv-L9-ckh" userLabel="Animation">
-                                <rect key="frame" x="-113" y="34" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyw-Ed-Jh3">
                                 <rect key="frame" x="170" y="584" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
