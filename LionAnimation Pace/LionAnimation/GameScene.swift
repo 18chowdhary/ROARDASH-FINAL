@@ -3,13 +3,7 @@
 //  LionAnimation
 //
 /*
- Check here for all the pre-coding stuff I did to this file! Storyboard, etc.
- - About this project
-    This project holds all the code for the lion animation, which will be merged with the start code. It is a game application.
- - Storyboarding 
-    There was no storyboarding required for this project.
- - Other prep stuff
-    I dragged and dropped the lion_icon and user_icon pngs from the Running screen project.
+ Added a lion to top, middle, and bottom of screen that can be shown individually or all at once (to prove they are there); also coded a function to check if there was a positive or negative change in pace, in minutes, outside of the acceptable margin of error (arbitrarily set at 0.5 min) with placeholder values for pace.
  */
 //  Created by Girls Who Code on 8/4/16.
 //  Copyright (c) 2016 Girls Who Code. All rights reserved.
@@ -78,13 +72,17 @@ class GameScene: SKScene {
             lionBottom.hidden = false
         }
         
+        // Placeholder values for pace in minutes. Should be connected to OneHourWalker.
         let oldPace: CGFloat = 7.5
         let newPace: CGFloat = 8
+        
+        // Compare old and new pace values and show corresponding lion
         func checkPace() {
             let changeInPace = CGFloat(oldPace - newPace)
             if changeInPace >= 0.5 {
                 showBottom()
             } else if changeInPace <= -0.5 {
+                //roar
                 showTop()
             }
         }
