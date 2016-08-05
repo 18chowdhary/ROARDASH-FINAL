@@ -97,7 +97,7 @@ class GameViewController: UIViewController {
         let strFraction = String(format: "%02d", fraction)
         
         // Concatenate minutes, seconds and milliseconds as assign it to the UILabel
-        thisLabel.text = "\(strMinutes):\(strSeconds):\(strFraction)"
+        thisLabel.text = "\(strMinutes):\(strSeconds)"
     }
 
 
