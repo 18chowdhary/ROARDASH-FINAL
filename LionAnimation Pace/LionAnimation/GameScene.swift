@@ -28,9 +28,20 @@ class GameScene: SKScene {
         
         // Making lion appear on the screen
         // Setting the lion's position
-        lion.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+        //Positioning of lion
+        //Constant x because lion will stay centered on the screen
+        let constantX = size.width * 0.5
+        //Min Y is the starting Y of the lion
+        let minY = CGFloat(0.0)
+        //Max Y is the ending Y of the lion
+        let maxY = size.height * 0.5
+        
+        // Position the lion at the bottom of the screen
+        lion.position = CGPoint(x: constantX, y: minY)
+        var lionY = minY
         // Making lion appear
         addChild(lion)
+        
         
         // Making user appear on screen
         // Set position
@@ -42,23 +53,14 @@ class GameScene: SKScene {
         // Keeping constant change in x to 0 because we won't be moving the lion horizontally
         let delta_x = 0.0
         // Setting change in y to be var with initial value 500 because we will want this to change based on the user's pace
-        var delta_y = CGFloat(500.0)
-        
-        //Positioning of lion 
-        //Constant x because lion will stay centered on the screen
-        let constantX = size.width * 0.5
-        //Min Y is the starting Y of the lion
-        let minY = CGFloat(0.0)
-        //Max Y is the ending Y of the lion
-        let maxY = size.height * 0.5
-        
-        // Position the lion at the bottom of the screen
-        lion.position = CGPoint(x: constantX, y: minY)
-        // Determine speed of the lion
-        let actualDuration = CGFloat(3.0)
-        // Move the lion
-        let actionMove = SKAction.moveByX(0.0, y: delta_y, duration: NSTimeInterval(actualDuration))
-        lion.runAction(SKAction.sequence([actionMove]))
+        var actualDuration = CGFloat(5)
+        var delta_y: CGFloat
+        var actionMove: SKAction
+        for i in 0 ..< 10 {
+            
+            lionY += 50
+            lion.position = CGPoint(x: constantX, y: lionY)
+        }
 
       
     }
