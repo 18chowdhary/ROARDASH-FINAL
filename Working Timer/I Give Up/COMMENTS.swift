@@ -8,3 +8,7 @@
     This is endlessly frustrating to me and I tried to rewrite the code so that the two fragments could be in the same class without success.
     At this point, I'm not sure what direction to take next. So far every attempt that we have made to collate our disparate pieces of code has ended in failure. That is not to say that we will continue to fail, but I foresee a long and difficult process before we succeed and I think we may be forced to rewrite some of the code to reach that point. I will be at a more optimistic point in the morning so I will see you guys then.
  */
+
+/* Day 5
+ This project has a working timer without milliseconds.
+ */

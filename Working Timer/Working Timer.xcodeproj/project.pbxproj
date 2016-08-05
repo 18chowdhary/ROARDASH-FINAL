@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		CC6AFD6E1D54238500C32374 /* COMMENTS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = COMMENTS.swift; sourceTree = "<group>"; };
-		CCA97FF01D53F6BE00825865 /* I Give Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Give Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA97FF01D53F6BE00825865 /* Working Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Working Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA97FF31D53F6BE00825865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA97FF51D53F6BE00825865 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		CCA97FF71D53F6BE00825865 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -48,10 +48,10 @@
 		CCA97FFE1D53F6BE00825865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA980011D53F6BE00825865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCA980031D53F6BE00825865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCA980081D53F6BE00825865 /* I Give UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Give UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA980081D53F6BE00825865 /* Working Timer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Working Timer.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA9800C1D53F6BE00825865 /* I_Give_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_Give_UpTests.swift; sourceTree = "<group>"; };
 		CCA9800E1D53F6BE00825865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCA980131D53F6BE00825865 /* I Give UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "I Give UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA980131D53F6BE00825865 /* Working Timer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Working Timer.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA980171D53F6BE00825865 /* I_Give_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I_Give_UpUITests.swift; sourceTree = "<group>"; };
 		CCA980191D53F6BE00825865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCA980251D53F73600825865 /* SWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWViewController.swift; sourceTree = "<group>"; };
@@ -85,9 +85,9 @@
 		CCA97FE71D53F6BE00825865 = {
 			isa = PBXGroup;
 			children = (
-				CCA97FF21D53F6BE00825865 /* I Give Up */,
-				CCA9800B1D53F6BE00825865 /* I Give UpTests */,
-				CCA980161D53F6BE00825865 /* I Give UpUITests */,
+				CCA97FF21D53F6BE00825865 /* Working Timer */,
+				CCA9800B1D53F6BE00825865 /* TimerTests */,
+				CCA980161D53F6BE00825865 /* TimerUITests */,
 				CCA97FF11D53F6BE00825865 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,14 +95,14 @@
 		CCA97FF11D53F6BE00825865 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CCA97FF01D53F6BE00825865 /* I Give Up.app */,
-				CCA980081D53F6BE00825865 /* I Give UpTests.xctest */,
-				CCA980131D53F6BE00825865 /* I Give UpUITests.xctest */,
+				CCA97FF01D53F6BE00825865 /* Working Timer.app */,
+				CCA980081D53F6BE00825865 /* Working Timer.xctest */,
+				CCA980131D53F6BE00825865 /* Working Timer.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CCA97FF21D53F6BE00825865 /* I Give Up */ = {
+		CCA97FF21D53F6BE00825865 /* Working Timer */ = {
 			isa = PBXGroup;
 			children = (
 				CC6AFD6E1D54238500C32374 /* COMMENTS.swift */,
@@ -116,33 +116,36 @@
 				CCA980001D53F6BE00825865 /* LaunchScreen.storyboard */,
 				CCA980031D53F6BE00825865 /* Info.plist */,
 			);
+			name = "Working Timer";
 			path = "I Give Up";
 			sourceTree = "<group>";
 		};
-		CCA9800B1D53F6BE00825865 /* I Give UpTests */ = {
+		CCA9800B1D53F6BE00825865 /* TimerTests */ = {
 			isa = PBXGroup;
 			children = (
 				CCA9800C1D53F6BE00825865 /* I_Give_UpTests.swift */,
 				CCA9800E1D53F6BE00825865 /* Info.plist */,
 			);
+			name = TimerTests;
 			path = "I Give UpTests";
 			sourceTree = "<group>";
 		};
-		CCA980161D53F6BE00825865 /* I Give UpUITests */ = {
+		CCA980161D53F6BE00825865 /* TimerUITests */ = {
 			isa = PBXGroup;
 			children = (
 				CCA980171D53F6BE00825865 /* I_Give_UpUITests.swift */,
 				CCA980191D53F6BE00825865 /* Info.plist */,
 			);
+			name = TimerUITests;
 			path = "I Give UpUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CCA97FEF1D53F6BE00825865 /* I Give Up */ = {
+		CCA97FEF1D53F6BE00825865 /* Working Timer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCA9801C1D53F6BE00825865 /* Build configuration list for PBXNativeTarget "I Give Up" */;
+			buildConfigurationList = CCA9801C1D53F6BE00825865 /* Build configuration list for PBXNativeTarget "Working Timer" */;
 			buildPhases = (
 				CCA97FEC1D53F6BE00825865 /* Sources */,
 				CCA97FED1D53F6BE00825865 /* Frameworks */,
@@ -152,14 +155,14 @@
 			);
 			dependencies = (
 			);
-			name = "I Give Up";
+			name = "Working Timer";
 			productName = "I Give Up";
-			productReference = CCA97FF01D53F6BE00825865 /* I Give Up.app */;
+			productReference = CCA97FF01D53F6BE00825865 /* Working Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CCA980071D53F6BE00825865 /* I Give UpTests */ = {
+		CCA980071D53F6BE00825865 /* Working TimerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCA9801F1D53F6BE00825865 /* Build configuration list for PBXNativeTarget "I Give UpTests" */;
+			buildConfigurationList = CCA9801F1D53F6BE00825865 /* Build configuration list for PBXNativeTarget "Working TimerTests" */;
 			buildPhases = (
 				CCA980041D53F6BE00825865 /* Sources */,
 				CCA980051D53F6BE00825865 /* Frameworks */,
@@ -170,14 +173,14 @@
 			dependencies = (
 				CCA9800A1D53F6BE00825865 /* PBXTargetDependency */,
 			);
-			name = "I Give UpTests";
+			name = "Working TimerTests";
 			productName = "I Give UpTests";
-			productReference = CCA980081D53F6BE00825865 /* I Give UpTests.xctest */;
+			productReference = CCA980081D53F6BE00825865 /* Working Timer.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CCA980121D53F6BE00825865 /* I Give UpUITests */ = {
+		CCA980121D53F6BE00825865 /* Working TimerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCA980221D53F6BE00825865 /* Build configuration list for PBXNativeTarget "I Give UpUITests" */;
+			buildConfigurationList = CCA980221D53F6BE00825865 /* Build configuration list for PBXNativeTarget "Working TimerUITests" */;
 			buildPhases = (
 				CCA9800F1D53F6BE00825865 /* Sources */,
 				CCA980101D53F6BE00825865 /* Frameworks */,
@@ -188,9 +191,9 @@
 			dependencies = (
 				CCA980151D53F6BE00825865 /* PBXTargetDependency */,
 			);
-			name = "I Give UpUITests";
+			name = "Working TimerUITests";
 			productName = "I Give UpUITests";
-			productReference = CCA980131D53F6BE00825865 /* I Give UpUITests.xctest */;
+			productReference = CCA980131D53F6BE00825865 /* Working Timer.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CCA97FEB1D53F6BE00825865 /* Build configuration list for PBXProject "I Give Up" */;
+			buildConfigurationList = CCA97FEB1D53F6BE00825865 /* Build configuration list for PBXProject "Working Timer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,9 +232,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CCA97FEF1D53F6BE00825865 /* I Give Up */,
-				CCA980071D53F6BE00825865 /* I Give UpTests */,
-				CCA980121D53F6BE00825865 /* I Give UpUITests */,
+				CCA97FEF1D53F6BE00825865 /* Working Timer */,
+				CCA980071D53F6BE00825865 /* Working TimerTests */,
+				CCA980121D53F6BE00825865 /* Working TimerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +301,12 @@
 /* Begin PBXTargetDependency section */
 		CCA9800A1D53F6BE00825865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CCA97FEF1D53F6BE00825865 /* I Give Up */;
+			target = CCA97FEF1D53F6BE00825865 /* Working Timer */;
 			targetProxy = CCA980091D53F6BE00825865 /* PBXContainerItemProxy */;
 		};
 		CCA980151D53F6BE00825865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CCA97FEF1D53F6BE00825865 /* I Give Up */;
+			target = CCA97FEF1D53F6BE00825865 /* Working Timer */;
 			targetProxy = CCA980141D53F6BE00825865 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -418,7 +421,7 @@
 				INFOPLIST_FILE = "I Give Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.I-Give-Up";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Working Timer";
 			};
 			name = Debug;
 		};
@@ -429,7 +432,7 @@
 				INFOPLIST_FILE = "I Give Up/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.I-Give-Up";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Working Timer";
 			};
 			name = Release;
 		};
@@ -441,8 +444,8 @@
 				INFOPLIST_FILE = "I Give UpTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.I-Give-UpTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/I Give Up.app/I Give Up";
+				PRODUCT_NAME = "Working Timer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Working Timer.app/Working Timer";
 			};
 			name = Debug;
 		};
@@ -453,8 +456,8 @@
 				INFOPLIST_FILE = "I Give UpTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.I-Give-UpTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/I Give Up.app/I Give Up";
+				PRODUCT_NAME = "Working Timer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Working Timer.app/Working Timer";
 			};
 			name = Release;
 		};
@@ -465,7 +468,7 @@
 				INFOPLIST_FILE = "I Give UpUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.I-Give-UpUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Working Timer";
 				TEST_TARGET_NAME = "I Give Up";
 			};
 			name = Debug;
@@ -476,7 +479,7 @@
 				INFOPLIST_FILE = "I Give UpUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.I-Give-UpUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Working Timer";
 				TEST_TARGET_NAME = "I Give Up";
 			};
 			name = Release;
@@ -484,7 +487,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CCA97FEB1D53F6BE00825865 /* Build configuration list for PBXProject "I Give Up" */ = {
+		CCA97FEB1D53F6BE00825865 /* Build configuration list for PBXProject "Working Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCA9801A1D53F6BE00825865 /* Debug */,
@@ -493,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCA9801C1D53F6BE00825865 /* Build configuration list for PBXNativeTarget "I Give Up" */ = {
+		CCA9801C1D53F6BE00825865 /* Build configuration list for PBXNativeTarget "Working Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCA9801D1D53F6BE00825865 /* Debug */,
@@ -502,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCA9801F1D53F6BE00825865 /* Build configuration list for PBXNativeTarget "I Give UpTests" */ = {
+		CCA9801F1D53F6BE00825865 /* Build configuration list for PBXNativeTarget "Working TimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCA980201D53F6BE00825865 /* Debug */,
@@ -511,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCA980221D53F6BE00825865 /* Build configuration list for PBXNativeTarget "I Give UpUITests" */ = {
+		CCA980221D53F6BE00825865 /* Build configuration list for PBXNativeTarget "Working TimerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCA980231D53F6BE00825865 /* Debug */,

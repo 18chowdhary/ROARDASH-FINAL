@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CCA97FEF1D53F6BE00825865"
-               BuildableName = "I Give Up.app"
-               BlueprintName = "I Give Up"
-               ReferencedContainer = "container:I Give Up.xcodeproj">
+               BuildableName = "Working Timer.app"
+               BlueprintName = "Working Timer"
+               ReferencedContainer = "container:Working Timer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CCA980071D53F6BE00825865"
-               BuildableName = "I Give UpTests.xctest"
-               BlueprintName = "I Give UpTests"
-               ReferencedContainer = "container:I Give Up.xcodeproj">
+               BuildableName = "Working Timer.xctest"
+               BlueprintName = "Working TimerTests"
+               ReferencedContainer = "container:Working Timer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CCA980121D53F6BE00825865"
-               BuildableName = "I Give UpUITests.xctest"
-               BlueprintName = "I Give UpUITests"
-               ReferencedContainer = "container:I Give Up.xcodeproj">
+               BuildableName = "Working Timer.xctest"
+               BlueprintName = "Working TimerUITests"
+               ReferencedContainer = "container:Working Timer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCA97FEF1D53F6BE00825865"
-            BuildableName = "I Give Up.app"
-            BlueprintName = "I Give Up"
-            ReferencedContainer = "container:I Give Up.xcodeproj">
+            BuildableName = "Working Timer.app"
+            BlueprintName = "Working Timer"
+            ReferencedContainer = "container:Working Timer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCA97FEF1D53F6BE00825865"
-            BuildableName = "I Give Up.app"
-            BlueprintName = "I Give Up"
-            ReferencedContainer = "container:I Give Up.xcodeproj">
+            BuildableName = "Working Timer.app"
+            BlueprintName = "Working Timer"
+            ReferencedContainer = "container:Working Timer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CCA97FEF1D53F6BE00825865"
-            BuildableName = "I Give Up.app"
-            BlueprintName = "I Give Up"
-            ReferencedContainer = "container:I Give Up.xcodeproj">
+            BuildableName = "Working Timer.app"
+            BlueprintName = "Working Timer"
+            ReferencedContainer = "container:Working Timer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
