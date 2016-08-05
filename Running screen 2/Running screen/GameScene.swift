@@ -74,9 +74,9 @@ class GameScene: SKScene {
         lion.position = CGPoint(x: constantX, y: minY)
         // Determine speed of the lion
         //leg one (refer to comment)
-        var actualDuration = CGFloat(250.0)
+        var actualDuration = CGFloat(50.0)
         //leg two (refer to comment)
-        var actualDuration2 = CGFloat(50.0)
+        var actualDuration2 = CGFloat(10.0)
         // Move the lion
         //leg one (refer to comment)
         let actionMove = SKAction.moveByX(CGFloat(0.0), y: delta_y, duration: NSTimeInterval(actualDuration))
