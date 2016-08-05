@@ -23,6 +23,9 @@
  - UPDATE #2: still on the train... :) 
  I was feeling kind of experimentative so I decided to play around with making an image a button. It's actually really easy; in the Storyboard, I clicked on the button "Tap to start Roardash" and opened up the side panel. There was a dropdown option labeled Image, and when I clicked on that, I could choose a picture to be the button. I chose my baby-bunny.jpg, which I dragged into this project. When I ran the project, "Tap to start ROARDASH" was replaced with my baby-bunny.jpg. :D I'm thinking we can replace baby-bunny.jpg with our logo and have the user click the logo to start :)
  
+ - UPDATE #3: at GWC
+ I added a background-gradient. In order to do so, I first dragged in the red-black-gradient.png and created a Sprite Node that fills up the screen with this image. I then changed its zPosition and the lion and user's zPositions so they're above this sprite and the backgroud image will not cover the sprites. 
+ 
  
  */
 //  Created by Girls Who Code on 8/2/16.
@@ -34,6 +37,7 @@ class GameScene: SKScene {
     // Creating lion & user
     let lion = SKSpriteNode(imageNamed: "lion_icon")
     let user = SKSpriteNode(imageNamed: "user_icon")
+    let background = SKSpriteNode(imageNamed: "red-black-gradient.png")
     
     // Random positions & arcs (Kept if we need it in the future)
 //    func random() -> CGFloat {
@@ -46,15 +50,21 @@ class GameScene: SKScene {
     
     // Main animation displays automatically when app runs
     override func didMoveToView(view: SKView) {
+        background.zPosition = 0
+        background.position = CGPoint(x: frame.size.width/2, y: frame.size.height/2)
+        addChild(background)
         
         // Making lion appear on screen
         // Setting initial position of lion
+        
+        lion.zPosition = 3
         lion.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
         // Making lion appear
         addChild(lion)
         
         // Making user appear on screen
         // Set position
+        user.zPosition = 2
         user.position = CGPoint(x: size.width * 0.5, y: size.height * 0.9)
         // Making user appear
         addChild(user)
@@ -80,6 +90,7 @@ class GameScene: SKScene {
         // Move the lion
         //leg one (refer to comment)
         let actionMove = SKAction.moveByX(CGFloat(0.0), y: delta_y, duration: NSTimeInterval(actualDuration))
+        
         //leg two (refer to comment)
         let actionMove2 = SKAction.moveByX(CGFloat(0.0), y: delta_y_2, duration: NSTimeInterval(actualDuration2))
         //let actionMoveDone = SKAction.unhide()
