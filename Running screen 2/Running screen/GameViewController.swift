@@ -62,6 +62,10 @@ class GameViewController: UIViewController {
     
     }
     
+    @IBAction func stopTime(sender: AnyObject) {
+        timer.invalidate()
+    }
+    
     //updates the time
     func updateTime() {
         //        // Time at which timer updates

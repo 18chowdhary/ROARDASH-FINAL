@@ -59,6 +59,7 @@ class GameScene: SKScene {
         
         lion.zPosition = 3
         lion.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+        
         // Making lion appear
         addChild(lion)
         
