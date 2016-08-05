@@ -20,7 +20,9 @@ import SpriteKit
 class GameScene: SKScene {
     
     // Creating the lion and user sprites.
-    let lion = SKSpriteNode(imageNamed: "lion_icon")
+    let lionTop = SKSpriteNode(imageNamed: "lion_icon")
+    let lionMid = SKSpriteNode(imageNamed: "lion_icon")
+    let lionBottom = SKSpriteNode(imageNamed: "lion_icon")
     let user = SKSpriteNode(imageNamed: "user_icon")
     
     
@@ -28,9 +30,18 @@ class GameScene: SKScene {
         
         // Making lion appear on the screen
         // Setting the lion's position
-        lion.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
-        // Making lion appear
-        addChild(lion)
+        lionMid.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+        // Making only middle lion appear
+        addChild(lionMid)
+        lionMid.hidden = false
+        
+        // For other lions
+        lionTop.position = CGPoint(x: size.width * 0.5, y: size.height * 0.7)
+        addChild(lionTop)
+        lionTop.hidden = true //hides the lion the easy way
+        lionBottom.position = CGPoint(x: size.width * 0.5, y: size.height * 0.3)
+        addChild(lionBottom)
+        lionBottom.hidden = true
         
         // Making user appear on screen
         // Set position
@@ -39,28 +50,47 @@ class GameScene: SKScene {
         addChild(user)
         
         // Animating lion
-        // Keeping constant change in x to 0 because we won't be moving the lion horizontally
-        let delta_x = 0.0
-        // Setting change in y to be var with initial value 500 because we will want this to change based on the user's pace
-        var delta_y = CGFloat(500.0)
+        // Shows only lionTop and hides the other two
+        func showTop() {
+            lionTop.hidden = false
+            lionMid.hidden = true
+            lionBottom.hidden = true
+        }
         
-        //Positioning of lion 
-        //Constant x because lion will stay centered on the screen
-        let constantX = size.width * 0.5
-        //Min Y is the starting Y of the lion
-        let minY = CGFloat(0.0)
-        //Max Y is the ending Y of the lion
-        let maxY = size.height * 0.5
+        // Shows only lionMid and hides the other two
+        func showMid() {
+            lionTop.hidden = true
+            lionMid.hidden = false
+            lionBottom.hidden = true
+        }
         
-        // Position the lion at the bottom of the screen
-        lion.position = CGPoint(x: constantX, y: minY)
-        // Determine speed of the lion
-        let actualDuration = CGFloat(3.0)
-        // Move the lion
-        let actionMove = SKAction.moveByX(0.0, y: delta_y, duration: NSTimeInterval(actualDuration))
-        lion.runAction(SKAction.sequence([actionMove]))
-
-      
+        // Shows only lionBottom and hides the other two
+        func showBottom() {
+            lionTop.hidden = true
+            lionMid.hidden = true
+            lionBottom.hidden = false
+        }
+        
+        // Shows all lions
+        func showAll() {
+            lionTop.hidden = false
+            lionMid.hidden = false
+            lionBottom.hidden = false
+        }
+        
+        let oldPace: CGFloat = 7.5
+        let newPace: CGFloat = 8
+        func checkPace() {
+            let changeInPace = CGFloat(oldPace - newPace)
+            if changeInPace >= 0.5 {
+                showBottom()
+            } else if changeInPace <= -0.5 {
+                showTop()
+            }
+        }
+        checkPace()
+        showAll()
+        
     }
     
     override func update(currentTime: CFTimeInterval) {
