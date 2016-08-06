@@ -37,7 +37,7 @@ class GameScene: SKScene {
     // Creating lion & user
     let lion = SKSpriteNode(imageNamed: "lion_icon")
     let user = SKSpriteNode(imageNamed: "user_icon")
-    let background = SKSpriteNode(imageNamed: "red-black-gradient.png")
+    let background = SKSpriteNode(imageNamed: "red-black-gradient.jpg")
     
     // Random positions & arcs (Kept if we need it in the future)
 //    func random() -> CGFloat {
@@ -57,7 +57,7 @@ class GameScene: SKScene {
         // Making lion appear on screen
         // Setting initial position of lion
         
-        lion.zPosition = 3
+        lion.zPosition = 2
         lion.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
         
         // Making lion appear
@@ -65,7 +65,7 @@ class GameScene: SKScene {
         
         // Making user appear on screen
         // Set position
-        user.zPosition = 2
+        user.zPosition = 1
         user.position = CGPoint(x: size.width * 0.5, y: size.height * 0.9)
         // Making user appear
         addChild(user)

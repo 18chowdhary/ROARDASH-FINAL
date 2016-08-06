@@ -8,21 +8,36 @@
 
 import UIKit
 import SpriteKit
+import CoreLocation
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, CLLocationManagerDelegate {
     
-    //will be the timer label; haven't figured out how to change the label's name...
-    @IBOutlet weak var thisLabel: UILabel!
+    //creating the timer label & distance label
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var milesLabel: UILabel!
     
-    //the view
+    // zeroTime is a time interval that will be set to the time at which start is pressed. The timer is declared here
+    var zeroTime = NSTimeInterval()
+    var timer : NSTimer = NSTimer()
+
+    
+    //Setting up location manager & distance stuff
+    let locationManager = CLLocationManager()
+    var startLocation: CLLocation!
+    var lastLocation: CLLocation!
+    var distanceTraveled = 0.0
+    var timerStartDate: NSDate!
+    //the view - irrelevant
     @IBOutlet weak var timerView: UIView!
     
-    var startTime = NSTimeInterval()
-    var totalElapsedTime: NSTimeInterval = 0;
-    var timer:NSTimer = NSTimer()
+    // Get rid of unnecessary stuff
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
     
     override func viewDidLoad() {
-        thisLabel.hidden = true
+        
         super.viewDidLoad()
         let scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
@@ -32,77 +47,88 @@ class GameViewController: UIViewController {
         scene.scaleMode = .ResizeFill
         skView.presentScene(scene)
         
-        //Experimenting with changing the background color
-        //timerView.backgroundColor = UIColor.blueColor()
+        // Pop-up request for user to allow location services
+        locationManager.requestWhenInUseAuthorization()
+        if CLLocationManager.locationServicesEnabled(){
+            // If user allows location services, call the locationManager to deliver location
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        } else {
+            // An error message
+            print("Need to Enable Location")
+        }
         
-        //showing a label once the button is clicked
-        thisLabel.hidden = false
+        //Starting the timer
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: #selector(GameViewController.updateTime), userInfo: nil, repeats: true)
+        zeroTime = NSDate.timeIntervalSinceReferenceDate()
+        timerStartDate = NSDate()
         
-        //the start of the timer code, from the Simple Start Stop Demo
-        if (!timer.valid) {
-            let aSelector : Selector = #selector(GameViewController.updateTime)
-            // Parameters for timer
-            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: aSelector, userInfo: nil, repeats: true)
-            startTime = NSDate.timeIntervalSinceReferenceDate()
-    }
-//    @IBAction func buttonClicked(sender: AnyObject) {
-//        //Experimenting with changing the background color
-//        timerView.backgroundColor = UIColor.blueColor()
-//        
-//        //showing a label once the button is clicked
-//        thisLabel.hidden = false
-//        
-//        //the start of the timer code, from the Simple Start Stop Demo
-//        if (!timer.valid) {
-//            let aSelector : Selector = #selector(GameViewController.updateTime)
-//            // Parameters for timer
-//            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: aSelector, userInfo: nil, repeats: true)
-//            startTime = NSDate.timeIntervalSinceReferenceDate()
+        //Start tracking location
+        // Set the initial values again so that distance doesn't jump up to wrong number
+        distanceTraveled = 0.0
+        startLocation = nil
+        lastLocation = nil
+        timerStartDate = NSDate()
+        locationManager.startUpdatingLocation()
         
-    
     }
     
-    @IBAction func stopTime(sender: AnyObject) {
-        timer.invalidate()
-    }
-    
-    //updates the time
+    // The process of updating the timer
     func updateTime() {
-        //        // Time at which timer updates
         let currentTime = NSDate.timeIntervalSinceReferenceDate()
-        //
-        //  Find the difference between current time and start time.
-        var elapsedTime: NSTimeInterval = currentTime - startTime
-        //
-        //        totalElapsedTime += elapsedTime
-        //
-        //        let formatter = NSDateFormatter()
-        //        formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        //        formatter.dateFormat = "mm:ss"
-        //
-        //        let date = NSDate(timeIntervalSinceReferenceDate: totalElapsedTime)
-        //        displayTimeLabel.text = formatter.stringFromDate(date)
+        var timePassed: NSTimeInterval = currentTime - zeroTime
         
-        //Calculate; the minutes in elapsed time.
-        let minutes = UInt8(elapsedTime / 60.0)
-        elapsedTime -= (NSTimeInterval(minutes) * 60)
+        // Divide time passed by 60 (conversion factor from seconds to minutes) and subtract that value so as not to double-count this time
+        let minutes = UInt8(timePassed / 60.0)
+        timePassed -= (NSTimeInterval(minutes) * 60)
+        // Do the same conversion for seconds
+        let seconds = UInt8(timePassed)
+        timePassed -= NSTimeInterval(seconds)
+        // Convert remaining increase in time to milliseconds
+        let millisecsX10 = UInt8(timePassed * 100)
         
-        // Calculate the seconds in elapsed time.
-        let seconds = UInt8(elapsedTime)
-        elapsedTime -= NSTimeInterval(seconds)
-        
-        // Find out the fraction of milliseconds to be displayed.
-        let fraction = UInt8(elapsedTime * 100)
-        
-        // Add the leading zero for minutes, seconds and millseconds and store them as string constants
-        
+        // Format the values of each time component
         let strMinutes = String(format: "%02d", minutes)
         let strSeconds = String(format: "%02d", seconds)
-        let strFraction = String(format: "%02d", fraction)
+//        let strMSX10 = String(format: "%02d", millisecsX10)
         
-        // Concatenate minutes, seconds and milliseconds as assign it to the UILabel
-        thisLabel.text = "\(strMinutes):\(strSeconds)"
-    }
+        // Display the components (min, sec, millisec) as a stopwatch
+        timerLabel.text = "\(strMinutes):\(strSeconds)"
+        
+        }
 
+func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    print("locations: \(locations)")
+    let currentLocation = locations.last!
+    
+    //var currentPace = currentLocation - locations[currentLocation-1]/1
+    //print(currentPace)
+    
+    if currentLocation.timestamp.compare(timerStartDate) == NSComparisonResult.OrderedAscending  {
+        print("location was recorded before we started the timer, ignoring...")
+        return
+    }
+    
+    
+    if startLocation == nil {
+        // If the startLocation box is empty when locationManager function is called, fill it with the current location
+        startLocation = currentLocation
+    }
+    else {
+        // If the function has already been called, calculate distance travelled
+        let lastDistance = lastLocation.distanceFromLocation(currentLocation)
+        distanceTraveled += lastDistance * 0.000621371
+        
+        let trimmedDistance = String(format: "%.2f", distanceTraveled)
+        
+        // Display the distance travelled
+        milesLabel.text = "\(trimmedDistance) Miles"
+        let lastPace = 1/(lastDistance*0.0372823)
+        print(lastPace)
+    }
+    
+    // Update the lastLocation value for next time loop runs
+    lastLocation = currentLocation
+}
 
 }

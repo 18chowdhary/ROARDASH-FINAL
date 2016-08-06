@@ -18,7 +18,7 @@
 		CC60C43A1D50E33600928292 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4381D50E33600928292 /* Sounds */; };
 		CC60C43B1D50E33600928292 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4391D50E33600928292 /* sprites.atlas */; };
 		CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC60C43E1D50E3F200928292 /* lion_icon.png */; };
-		CCAE9C5D1D54D4FC00E92E5E /* red-black-gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = CCAE9C5C1D54D4FC00E92E5E /* red-black-gradient.png */; };
+		CCAF11D21D550C29005ADD5F /* red-black-gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */; };
 		CCE0C1361D54B81A000E2943 /* baby-bunny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */; };
 		CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A41D50EE4300A44CCD /* user_icon.png */; };
 /* End PBXBuildFile section */
@@ -58,7 +58,7 @@
 		CC60C4381D50E33600928292 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		CC60C4391D50E33600928292 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 		CC60C43E1D50E3F200928292 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
-		CCAE9C5C1D54D4FC00E92E5E /* red-black-gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-black-gradient.png"; sourceTree = "<group>"; };
+		CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-black-gradient.jpg"; sourceTree = "<group>"; };
 		CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "baby-bunny.jpg"; sourceTree = "<group>"; };
 		CCEDF1A41D50EE4300A44CCD /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,8 +118,8 @@
 				CC60C4111D50E14300928292 /* Assets.xcassets */,
 				CC60C4131D50E14300928292 /* LaunchScreen.storyboard */,
 				CC60C4161D50E14300928292 /* Info.plist */,
-				CCAE9C5C1D54D4FC00E92E5E /* red-black-gradient.png */,
 				CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */,
+				CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */,
 				CC60C43E1D50E3F200928292 /* lion_icon.png */,
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
 				CC60C4381D50E33600928292 /* Sounds */,
@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					CC60C4021D50E14300928292 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = H9C424GL3P;
+						DevelopmentTeam = A7J9F3G345;
 					};
 					CC60C41A1D50E14300928292 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -251,11 +251,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCAF11D21D550C29005ADD5F /* red-black-gradient.jpg in Resources */,
 				CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */,
 				CC60C43A1D50E33600928292 /* Sounds in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
 				CC60C4121D50E14300928292 /* Assets.xcassets in Resources */,
-				CCAE9C5D1D54D4FC00E92E5E /* red-black-gradient.png in Resources */,
 				CCE0C1361D54B81A000E2943 /* baby-bunny.jpg in Resources */,
 				CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */,
 				CC60C43B1D50E33600928292 /* sprites.atlas in Resources */,
@@ -434,7 +434,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Running screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -448,7 +448,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Running screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
