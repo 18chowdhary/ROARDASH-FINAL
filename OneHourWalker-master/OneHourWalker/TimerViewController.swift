@@ -108,11 +108,6 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
         print("locations: \(locations)")
         let currentLocation = locations.last!
         
-        //var currentPace = currentLocation - locations[currentLocation-1]/1
-        //print(currentPace)
-        
-       
-        
         if currentLocation.timestamp.compare(timerStartDate) == NSComparisonResult.OrderedAscending  {
             print("location was recorded before we started the timer, ignoring...")
             return
