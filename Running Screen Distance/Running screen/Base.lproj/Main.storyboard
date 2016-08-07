@@ -100,7 +100,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t2-Qi-tsI">
-                                        <rect key="frame" x="8" y="62" width="71" height="21"/>
+                                        <rect key="frame" x="8" y="62" width="90" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -123,6 +123,12 @@
                                             <action selector="stopTimer:" destination="BV1-FR-VrT" eventType="touchUpInside" id="FAu-Ji-Uk0"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve0-wc-vlC">
+                                        <rect key="frame" x="127" y="62" width="165" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -132,6 +138,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="milesLabel" destination="3t2-Qi-tsI" id="fIW-Ks-tHH"/>
+                        <outlet property="paceLabel" destination="Ve0-wc-vlC" id="loQ-lR-mza"/>
                         <outlet property="timerLabel" destination="IIv-01-sNI" id="h3m-gm-a06"/>
                         <outlet property="timerView" destination="Q0d-Gs-ufm" id="BP9-Cg-bCC"/>
                     </connections>

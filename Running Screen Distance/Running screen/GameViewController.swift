@@ -12,7 +12,8 @@ import CoreLocation
 
 class GameViewController: UIViewController, CLLocationManagerDelegate {
     
-    //creating the timer label & distance label
+    //creating the pace label,  timer label & distance label
+    @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var milesLabel: UILabel!
     
@@ -138,8 +139,10 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             
             // Display the distance travelled
             milesLabel.text = "\(trimmedDistance) Miles"
-            let lastPace = 1/(lastDistance*0.0372823)
+            let lastPace = String(format: "%.2f", 1/(lastDistance*0.0372823))
+            
             print(lastPace)
+            paceLabel.text = "\(lastPace) Min per Mile"
         }
         
         // Update the lastLocation value for next time loop runs
