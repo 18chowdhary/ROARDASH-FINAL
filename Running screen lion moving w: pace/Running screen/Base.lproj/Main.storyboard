@@ -8,7 +8,7 @@
         <!--Home Screen-->
         <scene sceneID="xe9-ON-tT0">
             <objects>
-                <viewController id="t9W-ib-En6" userLabel="Home Screen" sceneMemberID="viewController">
+                <viewController id="t9W-ib-En6" userLabel="Home Screen" customClass="HomeScreenViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BhL-EH-2jV"/>
                         <viewControllerLayoutGuide type="bottom" id="37y-jt-hF1"/>
@@ -18,19 +18,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="roardash_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ULe-6A-OMt">
-                                <rect key="frame" x="68" y="20" width="235" height="147"/>
+                                <rect key="frame" x="70" y="20" width="235" height="147"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN">
-                                <rect key="frame" x="155" y="274" width="64" height="64"/>
+                                <rect key="frame" x="155" y="272" width="64" height="64"/>
                                 <state key="normal" image="right-orange-arrow.png"/>
                                 <connections>
                                     <segue destination="zpk-ab-KpR" kind="showDetail" id="zDD-9G-n4P"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upG-Ne-gy2">
+                                <rect key="frame" x="34" y="344" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="upG-Ne-gy2" id="n99-CU-p6S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAW-AS-pje" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,6 +215,6 @@
         <image name="roardash_logo.png" width="646" height="408"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yat-7s-tx4"/>
+        <segue reference="zDD-9G-n4P"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -25,6 +25,7 @@
 		CCF773721D58FD120076C74E /* pretty blue gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCF773711D58FD120076C74E /* pretty blue gradient.jpg */; };
 		CCF773741D58FDEC0076C74E /* left-orange-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF773731D58FDEC0076C74E /* left-orange-arrow.png */; };
 		CCF773761D58FE720076C74E /* right-orange-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF773751D58FE720076C74E /* right-orange-arrow.png */; };
+		CCF7737C1D5917180076C74E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7737B1D5917180076C74E /* HomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		CCF773711D58FD120076C74E /* pretty blue gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pretty blue gradient.jpg"; sourceTree = "<group>"; };
 		CCF773731D58FDEC0076C74E /* left-orange-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-orange-arrow.png"; sourceTree = "<group>"; };
 		CCF773751D58FE720076C74E /* right-orange-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-orange-arrow.png"; sourceTree = "<group>"; };
+		CCF7737B1D5917180076C74E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				CC60C4061D50E14300928292 /* AppDelegate.swift */,
+				CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */,
+				CCF7737B1D5917180076C74E /* HomeScreenViewController.swift */,
 				CC60C40A1D50E14300928292 /* GameScene.swift */,
 				CC60C40C1D50E14300928292 /* GameViewController.swift */,
 				CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */,
-				CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */,
 				CC60C40E1D50E14300928292 /* Main.storyboard */,
 				CC60C4131D50E14300928292 /* LaunchScreen.storyboard */,
 				CC60C4161D50E14300928292 /* Info.plist */,
@@ -303,6 +306,7 @@
 				CC60C40D1D50E14300928292 /* GameViewController.swift in Sources */,
 				CC4BBC0B1D58BEC300447767 /* MiddleScreenViewController.swift in Sources */,
 				CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */,
+				CCF7737C1D5917180076C74E /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
