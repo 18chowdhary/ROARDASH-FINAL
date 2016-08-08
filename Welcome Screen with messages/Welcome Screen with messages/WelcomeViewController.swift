@@ -12,7 +12,7 @@ import UIKit
 
 class WelcomeViewController : UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
-    let array = ["Hey you", "Hi", "Hello, world", "Strong looks good on you", "You're going to kick asphalt today", "Don't be afraid to fail, be afraid not to try", "You got this", "Be the little engine that did it"]
+    let array = ["Strong looks good on you", "You're going to kick asphalt today", "Don't be afraid to fail, be afraid not to try", "You got this", "Be the little engine that did it", ]
 
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor.orangeColor()
