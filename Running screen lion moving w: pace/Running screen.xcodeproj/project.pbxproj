@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC4BBC0B1D58BEC300447767 /* MiddleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */; };
-
 		CC5AA25B1D58D57F00D45FAD /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */; };
 		CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C4061D50E14300928292 /* AppDelegate.swift */; };
 		CC60C40B1D50E14300928292 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40A1D50E14300928292 /* GameScene.swift */; };
@@ -23,6 +22,7 @@
 		CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A41D50EE4300A44CCD /* user_icon.png */; };
 		CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCF773611D58C5B90076C74E /* lion_roar.mp3 */; };
 		CCF773661D58DAD40076C74E /* roardash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF773651D58DAD40076C74E /* roardash_logo.png */; };
+		CCF773721D58FD120076C74E /* pretty blue gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCF773711D58FD120076C74E /* pretty blue gradient.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +64,7 @@
 		CCEDF1A41D50EE4300A44CCD /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 		CCF773611D58C5B90076C74E /* lion_roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion_roar.mp3; sourceTree = "<group>"; };
 		CCF773651D58DAD40076C74E /* roardash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roardash_logo.png; sourceTree = "<group>"; };
+		CCF773711D58FD120076C74E /* pretty blue gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pretty blue gradient.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +124,9 @@
 				CC60C4161D50E14300928292 /* Info.plist */,
 				CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */,
 				CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */,
+				CCF773711D58FD120076C74E /* pretty blue gradient.jpg */,
 				CC60C43E1D50E3F200928292 /* lion_icon.png */,
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
-				CC60C4381D50E33600928292 /* Sounds */,
-				CC60C4391D50E33600928292 /* sprites.atlas */,
 				CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */,
 				CCF773611D58C5B90076C74E /* lion_roar.mp3 */,
 				CCF773651D58DAD40076C74E /* roardash_logo.png */,
@@ -264,6 +264,7 @@
 				CCF773661D58DAD40076C74E /* roardash_logo.png in Resources */,
 				CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */,
 				CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */,
+				CCF773721D58FD120076C74E /* pretty blue gradient.jpg in Resources */,
 				CC60C4101D50E14300928292 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
