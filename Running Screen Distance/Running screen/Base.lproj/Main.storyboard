@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="-441.5" y="332.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Middle Screen View Controller-->
         <scene sceneID="csG-4Z-v6B">
             <objects>
-                <viewController id="zpk-ab-KpR" sceneMemberID="viewController">
+                <viewController id="zpk-ab-KpR" customClass="MiddleScreenViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="imt-SH-nxS"/>
                         <viewControllerLayoutGuide type="bottom" id="Q8V-5T-hXm"/>
@@ -69,10 +69,18 @@
                                     <segue destination="t9W-ib-En6" kind="showDetail" id="1lJ-4R-5ad"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Ms-Tab">
+                                <rect key="frame" x="128" y="171" width="119" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="goalPaceTextField" destination="tYY-Ms-Tab" id="aUm-c3-P5i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZK-Am-DzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,6 +137,12 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLW-ZH-t3M">
+                                        <rect key="frame" x="117" y="94" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -137,6 +151,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="goalPaceLabel" destination="nLW-ZH-t3M" id="g4x-tj-VaU"/>
                         <outlet property="milesLabel" destination="3t2-Qi-tsI" id="fIW-Ks-tHH"/>
                         <outlet property="paceLabel" destination="Ve0-wc-vlC" id="loQ-lR-mza"/>
                         <outlet property="timerLabel" destination="IIv-01-sNI" id="h3m-gm-a06"/>

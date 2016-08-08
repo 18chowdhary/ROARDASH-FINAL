@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC4BBC0B1D58BEC300447767 /* MiddleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */; };
 		CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C4061D50E14300928292 /* AppDelegate.swift */; };
 		CC60C40B1D50E14300928292 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40A1D50E14300928292 /* GameScene.swift */; };
 		CC60C40D1D50E14300928292 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40C1D50E14300928292 /* GameViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleScreenViewController.swift; sourceTree = "<group>"; };
 		CC60C4031D50E14300928292 /* Running screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60C4061D50E14300928292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC60C40A1D50E14300928292 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
 				CC60C4381D50E33600928292 /* Sounds */,
 				CC60C4391D50E33600928292 /* sprites.atlas */,
+				CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */,
 			);
 			path = "Running screen";
 			sourceTree = "<group>";
@@ -214,7 +217,7 @@
 				TargetAttributes = {
 					CC60C4021D50E14300928292 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = A7J9F3G345;
+						DevelopmentTeam = H9C424GL3P;
 					};
 					CC60C41A1D50E14300928292 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -286,6 +289,7 @@
 			files = (
 				CC60C40B1D50E14300928292 /* GameScene.swift in Sources */,
 				CC60C40D1D50E14300928292 /* GameViewController.swift in Sources */,
+				CC4BBC0B1D58BEC300447767 /* MiddleScreenViewController.swift in Sources */,
 				CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +438,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Running screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen-lion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -448,7 +452,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Running screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen-lion";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

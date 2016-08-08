@@ -10,11 +10,20 @@ import UIKit
 import SpriteKit
 import CoreLocation
 
+
+
 class GameViewController: UIViewController, CLLocationManagerDelegate {
+    
+    var goalPace = String()
+    var goalPaceFloat: Float!
+    var lastPace: String!
+    var lastPaceFloat: Float!
+    var scene: GameScene!
     
     //creating the pace label,  timer label & distance label
     @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var goalPaceLabel: UILabel!
     @IBOutlet weak var milesLabel: UILabel!
     
     // zeroTime is a time interval that will be set to the time at which start is pressed. The timer is declared here
@@ -28,13 +37,22 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
     var lastLocation: CLLocation!
     var distanceTraveled = 0.0
     var timerStartDate: NSDate!
+    
     //the view - irrelevant
     @IBOutlet weak var timerView: UIView!
     
     override func viewDidLoad() {
         
+        
+        goalPaceLabel.hidden = true
+//        goalPaceLabel.text! = goalPace
+        print("goalPace in GameViewController is \(goalPace)")
+        goalPaceFloat = Float(goalPace)
+        print(goalPaceFloat+2)
+
+        
         super.viewDidLoad()
-        let scene = GameScene(size: view.bounds.size)
+        scene = GameScene(size: view.bounds.size)
         let skView = view as! SKView
         skView.showsFPS = true
         skView.showsNodeCount = true
@@ -53,6 +71,8 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             // An error message
             print("Need to Enable Location")
         }
+        
+       
         
     }
     
@@ -139,14 +159,49 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             
             // Display the distance travelled
             milesLabel.text = "\(trimmedDistance) Miles"
-            let lastPace = String(format: "%.2f", 1/(lastDistance*0.0372823))
+            lastPace = String(format: "%.2f", 1/(lastDistance*0.0372823))
             
             print(lastPace)
             paceLabel.text = "\(lastPace) Min per Mile"
+            lastPaceFloat = Float(lastPace)
+            
+            showLion(lastPaceFloat, goalPaceFloat: goalPaceFloat)
+
+            
         }
         
         // Update the lastLocation value for next time loop runs
         lastLocation = currentLocation
-    }
+        
+            }
     
+    func showLion(lastPaceFloat: Float, goalPaceFloat: Float)
+    {
+        let actualDuration = CGFloat(1.0)
+        let deltaYMid = CGFloat(0.0)
+        let deltaYTop = CGFloat(50.0)
+        let deltaYBottom = CGFloat(-50.0)
+        let minPaceScalar = Float(0.9)
+        let maxPaceScalar = Float(1.1)
+        
+        if scene.lion.position != CGPoint(x: scene.size.width*0.5, y: scene.size.height) && scene.lion.position != CGPoint(x: scene.size.width*0.5, y: 0.0)
+        {
+            if lastPaceFloat > goalPaceFloat * minPaceScalar && lastPaceFloat < goalPaceFloat * maxPaceScalar {
+            
+                scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYMid, duration: NSTimeInterval(actualDuration)))
+                print("Current pace is in acceptable pace")
+            
+            } else if lastPaceFloat > goalPaceFloat * maxPaceScalar {
+            
+                scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYTop, duration: NSTimeInterval(actualDuration)))
+                print("Current pace is too slow")
+            
+            } else if lastPaceFloat < goalPaceFloat * minPaceScalar {
+            
+                scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYBottom, duration: NSTimeInterval(actualDuration)))
+                print("Current pace is faster")
+            }
+        }
+        
+    }
 }

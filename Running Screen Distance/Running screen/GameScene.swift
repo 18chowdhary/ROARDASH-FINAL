@@ -70,6 +70,7 @@ class GameScene: SKScene {
         // Making user appear
         addChild(user)
         
-        
     }
+    
+   
 }
