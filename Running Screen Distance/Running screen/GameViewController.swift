@@ -10,6 +10,7 @@ import UIKit
 import SpriteKit
 import CoreLocation
 
+
 class GameViewController: UIViewController, CLLocationManagerDelegate {
     
     //Creating the pace label,  timer label & distance label
