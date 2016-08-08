@@ -20,6 +20,7 @@
 		CCE0C1361D54B81A000E2943 /* baby-bunny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */; };
 		CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A41D50EE4300A44CCD /* user_icon.png */; };
 		CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCF773611D58C5B90076C74E /* lion_roar.mp3 */; };
+		CCF773661D58DAD40076C74E /* roardash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF773651D58DAD40076C74E /* roardash_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "baby-bunny.jpg"; sourceTree = "<group>"; };
 		CCEDF1A41D50EE4300A44CCD /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 		CCF773611D58C5B90076C74E /* lion_roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion_roar.mp3; sourceTree = "<group>"; };
+		CCF773651D58DAD40076C74E /* roardash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roardash_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				CC60C43E1D50E3F200928292 /* lion_icon.png */,
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
 				CCF773611D58C5B90076C74E /* lion_roar.mp3 */,
+				CCF773651D58DAD40076C74E /* roardash_logo.png */,
 			);
 			path = "Running screen";
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
 				CCE0C1361D54B81A000E2943 /* baby-bunny.jpg in Resources */,
+				CCF773661D58DAD40076C74E /* roardash_logo.png in Resources */,
 				CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */,
 				CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */,
 				CC60C4101D50E14300928292 /* Main.storyboard in Resources */,
