@@ -155,9 +155,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-8p-5QR">
-                                <rect key="frame" x="20" y="13" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-8p-5QR">
+                                <rect key="frame" x="20" y="20" width="34" height="34"/>
+                                <state key="normal" image="left-orange-arrow.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="zpk-ab-KpR" kind="showDetail" id="yat-7s-tx4"/>
                                 </connections>
@@ -180,9 +182,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="left-orange-arrow.png" width="64" height="64"/>
         <image name="roardash_logo.png" width="646" height="408"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zDD-9G-n4P"/>
+        <segue reference="yat-7s-tx4"/>
     </inferredMetricsTieBreakers>
 </document>
