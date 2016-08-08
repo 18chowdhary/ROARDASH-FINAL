@@ -10,9 +10,6 @@ import UIKit
 import SpriteKit
 import CoreLocation
 
-
-<<<<<<< HEAD
-
 class GameViewController: UIViewController, CLLocationManagerDelegate {
     
     var goalPace = String()
@@ -20,13 +17,9 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
     var lastPace: String!
     var lastPaceFloat: Float!
     var scene: GameScene!
-    
-    //creating the pace label,  timer label & distance label
-=======
-class GameViewController: UIViewController, CLLocationManagerDelegate {
+
     
     //Creating the pace label,  timer label & distance label
->>>>>>> origin/master
     @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var goalPaceLabel: UILabel!
@@ -52,7 +45,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
         
         goalPaceLabel.hidden = true
 //        goalPaceLabel.text! = goalPace
-        print("goalPace in GameViewController is \(goalPace)")
+        print("The goal pace in GameViewController is \(goalPace)")
         goalPaceFloat = Float(goalPace)
         print(goalPaceFloat+2)
 
@@ -195,7 +188,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             if lastPaceFloat > goalPaceFloat * minPaceScalar && lastPaceFloat < goalPaceFloat * maxPaceScalar {
             
                 scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYMid, duration: NSTimeInterval(actualDuration)))
-                print("Current pace is in acceptable pace")
+                print("Current pace is in acceptable range")
             
             } else if lastPaceFloat > goalPaceFloat * maxPaceScalar {
             
