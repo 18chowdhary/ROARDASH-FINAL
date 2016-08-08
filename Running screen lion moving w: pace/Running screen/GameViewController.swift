@@ -9,6 +9,7 @@
 import UIKit
 import SpriteKit
 import CoreLocation
+import AVFoundation
 
 class GameViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -24,7 +25,11 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var goalPaceLabel: UILabel!
     @IBOutlet weak var milesLabel: UILabel!
+    var myAudioPlayer = AVAudioPlayer()
     
+    @IBAction func callRoar(sender: AnyObject) {
+        myAudioPlayer.play()
+    }
     // zeroTime is a time interval that will be set to the time at which start is pressed. The timer is declared here
     var zeroTime = NSTimeInterval()
     var timer : NSTimer = NSTimer()
@@ -47,7 +52,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
 //        goalPaceLabel.text! = goalPace
         print("The goal pace in GameViewController is \(goalPace)")
         goalPaceFloat = Float(goalPace)
-        print(goalPaceFloat+2)
+        //]print("\(goalPaceFloat+2)")
 
         
         super.viewDidLoad()
@@ -71,7 +76,17 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             print("Need to Enable Location")
         }
         
-       
+        let lionRoarPathString = NSBundle.mainBundle().pathForResource("lion_roar", ofType: "mp3")
+        
+        if let lionRoarPathString = lionRoarPathString {
+            let soundURL = NSURL(fileURLWithPath: lionRoarPathString)
+            do {
+                try myAudioPlayer = AVAudioPlayer(contentsOfURL: soundURL)
+            } catch {
+                print("Error with sound playback")
+            }
+        }
+        
         
     }
     
@@ -183,24 +198,28 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
         let minPaceScalar = Float(0.9)
         let maxPaceScalar = Float(1.1)
         
-        if scene.lion.position != CGPoint(x: scene.size.width*0.5, y: scene.size.height) && scene.lion.position != CGPoint(x: scene.size.width*0.5, y: 0.0)
-        {
+//        if scene.lion.position.y < scene.size.height && scene.lion.position.y > 0.0 {
+
+            
             if lastPaceFloat > goalPaceFloat * minPaceScalar && lastPaceFloat < goalPaceFloat * maxPaceScalar  {
             
                 scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYMid, duration: NSTimeInterval(actualDuration)))
                 print("Current pace is in acceptable range")
             
             } else if lastPaceFloat > goalPaceFloat * maxPaceScalar {
-            
+                //if scene.lion.position.y <= scene.user.position.y {
                 scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYTop, duration: NSTimeInterval(actualDuration)))
                 print("Current pace is too slow")
+                myAudioPlayer.play()
+//                }
             
             } else if lastPaceFloat < goalPaceFloat * minPaceScalar {
-            
+                //if scene.lion.position.y >= scene.user.position.y {
                 scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYBottom, duration: NSTimeInterval(actualDuration)))
                 print("Current pace is faster")
+//                }
             }
-        }
+//        }
         
     }
 }

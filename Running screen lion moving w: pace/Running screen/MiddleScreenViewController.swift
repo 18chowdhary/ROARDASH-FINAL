@@ -9,12 +9,18 @@
 import Foundation
 import UIKit
 
-class MiddleScreenViewController : UIViewController{
+class MiddleScreenViewController : UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var goalPaceTextField: UITextField!
     
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextButton.titleLabel?.textColor = UIColor.redColor()
+     //   nextButton.enabled = false
+        goalPaceTextField.keyboardType = .DecimalPad
+        goalPaceTextField.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,4 +31,25 @@ class MiddleScreenViewController : UIViewController{
         var DestView : GameViewController = segue.destinationViewController as!GameViewController
         DestView.goalPace = goalPaceTextField.text!
     }
+    
+//    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+////        if goalPaceTextField.text!.isEmpty && string.isEmpty{
+////        
+////            nextButton.enabled = false
+////        }
+////        else {
+////            nextButton.enabled = true
+////        }
+//        return true
+//    }
+//    
+//    func textFieldDidEndEditing(textField: UITextField) {
+//        if goalPaceTextField.text!.isEmpty {
+//            
+//            nextButton.enabled = false
+//        }
+//        else {
+//            nextButton.enabled = true
+//        }
+//    }
 }
