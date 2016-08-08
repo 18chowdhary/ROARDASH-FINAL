@@ -185,7 +185,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
         
         if scene.lion.position != CGPoint(x: scene.size.width*0.5, y: scene.size.height) && scene.lion.position != CGPoint(x: scene.size.width*0.5, y: 0.0)
         {
-            if lastPaceFloat > goalPaceFloat * minPaceScalar && lastPaceFloat < goalPaceFloat * maxPaceScalar {
+            if lastPaceFloat > goalPaceFloat * minPaceScalar && lastPaceFloat < goalPaceFloat * maxPaceScalar  {
             
                 scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYMid, duration: NSTimeInterval(actualDuration)))
                 print("Current pace is in acceptable range")
