@@ -25,6 +25,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //I don't know what's going on here, but it gave us a SIGABRT message and crashed when run
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
 //            let skView = self.view as! SKView

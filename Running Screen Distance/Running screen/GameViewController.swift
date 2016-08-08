@@ -12,7 +12,7 @@ import CoreLocation
 
 class GameViewController: UIViewController, CLLocationManagerDelegate {
     
-    //creating the pace label,  timer label & distance label
+    //Creating the pace label,  timer label & distance label
     @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var milesLabel: UILabel!

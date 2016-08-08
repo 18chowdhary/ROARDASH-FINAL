@@ -11,16 +11,14 @@
 		CC60C40B1D50E14300928292 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40A1D50E14300928292 /* GameScene.swift */; };
 		CC60C40D1D50E14300928292 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40C1D50E14300928292 /* GameViewController.swift */; };
 		CC60C4101D50E14300928292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC60C40E1D50E14300928292 /* Main.storyboard */; };
-		CC60C4121D50E14300928292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4111D50E14300928292 /* Assets.xcassets */; };
 		CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4131D50E14300928292 /* LaunchScreen.storyboard */; };
 		CC60C4201D50E14300928292 /* Running_screenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C41F1D50E14300928292 /* Running_screenTests.swift */; };
 		CC60C42B1D50E14300928292 /* Running_screenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C42A1D50E14300928292 /* Running_screenUITests.swift */; };
-		CC60C43A1D50E33600928292 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4381D50E33600928292 /* Sounds */; };
-		CC60C43B1D50E33600928292 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CC60C4391D50E33600928292 /* sprites.atlas */; };
 		CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC60C43E1D50E3F200928292 /* lion_icon.png */; };
 		CCAF11D21D550C29005ADD5F /* red-black-gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */; };
 		CCE0C1361D54B81A000E2943 /* baby-bunny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */; };
 		CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A41D50EE4300A44CCD /* user_icon.png */; };
+		CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCF773611D58C5B90076C74E /* lion_roar.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +44,6 @@
 		CC60C40A1D50E14300928292 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CC60C40C1D50E14300928292 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CC60C40F1D50E14300928292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC60C4111D50E14300928292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC60C4141D50E14300928292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC60C4161D50E14300928292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC60C41B1D50E14300928292 /* Running screenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Running screenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,12 +52,11 @@
 		CC60C4261D50E14300928292 /* Running screenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Running screenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60C42A1D50E14300928292 /* Running_screenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running_screenUITests.swift; sourceTree = "<group>"; };
 		CC60C42C1D50E14300928292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC60C4381D50E33600928292 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
-		CC60C4391D50E33600928292 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 		CC60C43E1D50E3F200928292 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
 		CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-black-gradient.jpg"; sourceTree = "<group>"; };
 		CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "baby-bunny.jpg"; sourceTree = "<group>"; };
 		CCEDF1A41D50EE4300A44CCD /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
+		CCF773611D58C5B90076C74E /* lion_roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion_roar.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,15 +111,13 @@
 				CC60C40A1D50E14300928292 /* GameScene.swift */,
 				CC60C40C1D50E14300928292 /* GameViewController.swift */,
 				CC60C40E1D50E14300928292 /* Main.storyboard */,
-				CC60C4111D50E14300928292 /* Assets.xcassets */,
 				CC60C4131D50E14300928292 /* LaunchScreen.storyboard */,
 				CC60C4161D50E14300928292 /* Info.plist */,
 				CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */,
 				CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */,
 				CC60C43E1D50E3F200928292 /* lion_icon.png */,
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
-				CC60C4381D50E33600928292 /* Sounds */,
-				CC60C4391D50E33600928292 /* sprites.atlas */,
+				CCF773611D58C5B90076C74E /* lion_roar.mp3 */,
 			);
 			path = "Running screen";
 			sourceTree = "<group>";
@@ -253,12 +247,10 @@
 			files = (
 				CCAF11D21D550C29005ADD5F /* red-black-gradient.jpg in Resources */,
 				CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */,
-				CC60C43A1D50E33600928292 /* Sounds in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
-				CC60C4121D50E14300928292 /* Assets.xcassets in Resources */,
 				CCE0C1361D54B81A000E2943 /* baby-bunny.jpg in Resources */,
 				CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */,
-				CC60C43B1D50E33600928292 /* sprites.atlas in Resources */,
+				CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */,
 				CC60C4101D50E14300928292 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
