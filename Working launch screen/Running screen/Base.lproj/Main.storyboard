@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.81043009730121829" blue="0.011847903004282956" alpha="0.40239915780141844" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.85882352941176465" blue="0.44577976954204501" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4zZ-Z5-h7P" firstAttribute="centerX" secondItem="upG-Ne-gy2" secondAttribute="centerX" id="6qf-KI-A9M"/>
                             <constraint firstAttribute="trailing" secondItem="4zZ-Z5-h7P" secondAttribute="trailing" id="CH1-fl-nDf"/>
@@ -101,7 +101,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Ms-Tab">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Ms-Tab">
                                 <rect key="frame" x="128" y="171" width="93" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -414,7 +414,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1203" id="mxc-zY-z6I"/>
                                 </constraints>
-                                <mutableString key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
+                                <string key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
 
 We would like to thank our teachers: Carolyn Aquino, Emma Lurie, and Maria Galebach. Also a huge shoutout to Matt whose last name we don't know for his immensely valuable help in debugging and realizing our vision.
 
@@ -436,7 +436,7 @@ Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com
 “Swift 2.0 Programming Language Tutorial.” YouTube, uploaded by Funza Academy, www.youtube.com/watch?v=RKfe7xzHEZk. Accessed 5 Aug. 2016. This tutorial explains “AVFoundation : AVAudioPlayer , NSURL, NSBundle and more”, so we used it to learn how to use sound in an app.
 
 Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -464,7 +464,7 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
         <image name="trophy_emoji.png" width="435" height="525"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yat-7s-tx4"/>
         <segue reference="kI8-0h-tsX"/>
+        <segue reference="zDD-9G-n4P"/>
     </inferredMetricsTieBreakers>
 </document>
