@@ -17,23 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
-                                <rect key="frame" x="155" y="419" width="64" height="64"/>
-                                <state key="normal" image="right-orange-arrow.png"/>
-                                <connections>
-                                    <segue destination="zpk-ab-KpR" kind="showDetail" id="zDD-9G-n4P"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROARDASH_FINAL.png" translatesAutoresizingMaskIntoConstraints="NO" id="BE8-kg-MSx">
-                                <rect key="frame" x="12" y="109" width="375" height="221"/>
+                                <rect key="frame" x="20" y="142" width="375" height="221"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upG-Ne-gy2">
-                                <rect key="frame" x="36" y="287" width="303" height="143"/>
+                                <rect key="frame" x="36" y="309" width="303" height="143"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome Message">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="Optima-BoldItalic"/>
+                                            <font key="NSFont" size="18" name="Baskerville-SemiBoldItalic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -47,6 +40,13 @@
                                 </state>
                                 <connections>
                                     <segue destination="KPr-aj-1pS" kind="showDetail" id="VIu-es-Ysa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
+                                <rect key="frame" x="155" y="419" width="64" height="64"/>
+                                <state key="normal" image="right-orange-arrow.png"/>
+                                <connections>
+                                    <segue destination="zpk-ab-KpR" kind="showDetail" id="zDD-9G-n4P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -154,19 +154,14 @@
                                 <rect key="frame" x="0.0" y="539" width="375" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIv-01-sNI">
-                                        <rect key="frame" x="18" y="70" width="79" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t2-Qi-tsI">
-                                        <rect key="frame" x="18" y="41" width="90" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="18" y="70" width="165" height="21"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3c-sn-nOZ">
                                         <rect key="frame" x="312" y="37" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -176,6 +171,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pco-fl-lFc">
                                         <rect key="frame" x="312" y="90" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Stop">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -186,13 +182,19 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 min per mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve0-wc-vlC">
                                         <rect key="frame" x="18" y="99" width="165" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLW-ZH-t3M">
                                         <rect key="frame" x="316" y="69" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t2-Qi-tsI">
+                                        <rect key="frame" x="18" y="41" width="165" height="21"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -280,7 +282,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjJ-dC-o1w">
                                 <rect key="frame" x="20" y="62" width="335" height="1202.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
+                                <string key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
 
  Works Cited 
 “Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
@@ -290,7 +292,7 @@ Maher, Matthew. “Building a Fitness App Using HealthKit to Track Walking Dista
 Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com/trianglify-generate-colorful-triangle-meshes/trianglify-background-5/. This is one of our backgrounds
 “Swift Documentation.” Swift Resources. Apple Developer, Apple, developer.apple.com/swift/resources/. Accessed 8 Aug. 2016. The Apple Developer docs are sometimes useful in debugging or getting background information on some of Swift’s features. We referenced this source many times with specific questions.
 “Swift 2.0 Programming Language Tutorial.” YouTube, uploaded by Funza Academy, www.youtube.com/watch?v=RKfe7xzHEZk. Accessed 5 Aug. 2016. This tutorial explains “AVFoundation : AVAudioPlayer , NSURL, NSBundle and more”, so we used it to learn how to use sound in an app.
-Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.</mutableString>
+Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
