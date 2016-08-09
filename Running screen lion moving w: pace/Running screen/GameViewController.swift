@@ -127,23 +127,20 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
         // Do the same conversion for seconds
         let seconds = UInt8(timePassed)
         timePassed -= NSTimeInterval(seconds)
-        // Convert remaining increase in time to milliseconds
-        let millisecsX10 = UInt8(timePassed * 100)
         
         // Format the values of each time component
         let strMinutes = String(format: "%02d", minutes)
         let strSeconds = String(format: "%02d", seconds)
-        let strMSX10 = String(format: "%02d", millisecsX10)
         
         // Display the components (min, sec, millisec) as a stopwatch
-        timerLabel.text = "\(strMinutes):\(strSeconds):\(strMSX10)"
+        timerLabel.text = "\(strMinutes):\(strSeconds) min"
         
         
-        // Kill the timer if it runs over the maximum value
-        if timerLabel.text == "60:00:00" {
-            timer.invalidate()
-            locationManager.stopUpdatingLocation()
-        }
+//        // Kill the timer if it runs over the maximum value
+//        if timerLabel.text == "60:00" {
+//            timer.invalidate()
+//            locationManager.stopUpdatingLocation()
+//        }
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -172,11 +169,11 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             let trimmedDistance = String(format: "%.2f", distanceTraveled)
             
             // Display the distance travelled
-            milesLabel.text = "\(trimmedDistance) Miles"
+            milesLabel.text = "\(trimmedDistance) mi"
             lastPace = String(format: "%.2f", 1/(lastDistance*0.0372823))
             
             print(lastPace)
-            paceLabel.text = "\(lastPace) Min per Mile"
+            paceLabel.text = "\(lastPace) min per mi"
             lastPaceFloat = Float(lastPace)
             
             showLion(lastPaceFloat, goalPaceFloat: goalPaceFloat)
@@ -193,33 +190,32 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
     {
         let actualDuration = CGFloat(1.0)
         let deltaYMid = CGFloat(0.0)
-        let deltaYTop = CGFloat(50.0)
-        let deltaYBottom = CGFloat(-50.0)
-        let minPaceScalar = Float(0.9)
-        let maxPaceScalar = Float(1.1)
+        let deltaYTop = CGFloat(5.0)
+        let deltaYBottom = CGFloat(-5.0)
+        let minPaceScalar = Float(0.2)
+        let maxPaceScalar = Float(0.2)
         
-//        if scene.lion.position.y < scene.size.height && scene.lion.position.y > 0.0 {
 
+        if lastPaceFloat > goalPaceFloat + minPaceScalar && lastPaceFloat < goalPaceFloat + maxPaceScalar  {
+            print("Current pace is in acceptable range")
+//            if scene.lion.position.y >= 0.0 && scene.lion.position <= scene.height {
+            scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYMid, duration: NSTimeInterval(actualDuration)))
+//            }
             
-            if lastPaceFloat > goalPaceFloat * minPaceScalar && lastPaceFloat < goalPaceFloat * maxPaceScalar  {
-            
-                scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYMid, duration: NSTimeInterval(actualDuration)))
-                print("Current pace is in acceptable range")
-            
-            } else if lastPaceFloat > goalPaceFloat * maxPaceScalar {
-                //if scene.lion.position.y <= scene.user.position.y {
+        } else if lastPaceFloat > goalPaceFloat + maxPaceScalar {
+            print("Current pace is too slow")
+            myAudioPlayer.play()
+            if scene.lion.position.y <= scene.user.position.y - CGFloat(scene.user.centerRect.height) {
                 scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYTop, duration: NSTimeInterval(actualDuration)))
-                print("Current pace is too slow")
-                myAudioPlayer.play()
-//                }
-            
-            } else if lastPaceFloat < goalPaceFloat * minPaceScalar {
-                //if scene.lion.position.y >= scene.user.position.y {
-                scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYBottom, duration: NSTimeInterval(actualDuration)))
-                print("Current pace is faster")
-//                }
             }
-//        }
+            
+            
+        } else if lastPaceFloat < goalPaceFloat + minPaceScalar {
+                //if scene.lion.position.y >= scene.user.position.y {
+            scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYBottom, duration: NSTimeInterval(actualDuration)))
+            print("Current pace is faster")
+//                }
+        }
         
     }
 }
