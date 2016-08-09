@@ -95,52 +95,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-mP-Xiu">
-                                <rect key="frame" x="158" y="267" width="59" height="30"/>
-                                <state key="normal" title="Let's go!"/>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="showDetail" id="wUJ-Fg-udU"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Ms-Tab">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How fast do you want to run?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am8-Hm-dTr">
+                                <rect key="frame" x="0.0" y="142" width="375" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Ms-Tab">
                                 <rect key="frame" x="128" y="171" width="93" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lgn-oD-grL"/>
+                                    <constraint firstAttribute="width" constant="93" id="rde-Bl-154"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-k6-BgJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-k6-BgJ">
                                 <rect key="frame" x="229" y="172" width="18" height="16"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="UBM-UA-apt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="10"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1K-Xg-Jth">
-                                <rect key="frame" x="229" y="186" width="18" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1K-Xg-Jth">
+                                <rect key="frame" x="229" y="189" width="18" height="12"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="10"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="____" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yZ-Q0-zhh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="____" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yZ-Q0-zhh">
                                 <rect key="frame" x="229" y="173" width="22" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="KzK-hn-MQ2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How fast do you want to run?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am8-Hm-dTr">
-                                <rect key="frame" x="76" y="142" width="223" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to start running?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egY-nT-8uF">
+                                <rect key="frame" x="104" y="245" width="166" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready to start running?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egY-nT-8uF">
-                                <rect key="frame" x="98" y="245" width="179" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-mP-Xiu">
+                                <rect key="frame" x="151" y="267" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="Ljo-e3-OVD"/>
+                                    <constraint firstAttribute="height" constant="30" id="a1P-bU-MXN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <state key="normal" title="Let's go!">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="showDetail" id="wUJ-Fg-udU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="egY-nT-8uF" firstAttribute="top" secondItem="tYY-Ms-Tab" secondAttribute="bottom" constant="44" id="3p0-sk-FmP"/>
+                            <constraint firstItem="tYY-Ms-Tab" firstAttribute="bottom" secondItem="g1K-Xg-Jth" secondAttribute="bottom" id="6yf-FR-XNz"/>
+                            <constraint firstItem="Q8V-5T-hXm" firstAttribute="top" secondItem="YHt-mP-Xiu" secondAttribute="bottom" constant="370" id="8WW-2T-zfZ"/>
+                            <constraint firstItem="Tut-k6-BgJ" firstAttribute="top" secondItem="am8-Hm-dTr" secondAttribute="bottom" constant="9" id="AES-GK-EPb"/>
+                            <constraint firstItem="tYY-Ms-Tab" firstAttribute="top" secondItem="asG-dY-CKx" secondAttribute="top" constant="171" id="Djw-UK-JrD"/>
+                            <constraint firstItem="1yZ-Q0-zhh" firstAttribute="leading" secondItem="tYY-Ms-Tab" secondAttribute="trailing" constant="8" symbolic="YES" id="Gfi-Ng-oOZ"/>
+                            <constraint firstItem="am8-Hm-dTr" firstAttribute="width" secondItem="asG-dY-CKx" secondAttribute="width" id="P6F-BY-Sy7"/>
+                            <constraint firstItem="tYY-Ms-Tab" firstAttribute="leading" secondItem="asG-dY-CKx" secondAttribute="leading" constant="128" id="VUG-1t-i2G"/>
+                            <constraint firstItem="egY-nT-8uF" firstAttribute="width" secondItem="asG-dY-CKx" secondAttribute="height" multiplier="166:667" id="anP-3V-lpG"/>
+                            <constraint firstItem="1yZ-Q0-zhh" firstAttribute="top" secondItem="am8-Hm-dTr" secondAttribute="bottom" constant="10" id="bvx-7m-rov"/>
+                            <constraint firstItem="g1K-Xg-Jth" firstAttribute="leading" secondItem="tYY-Ms-Tab" secondAttribute="trailing" constant="8" symbolic="YES" id="cPV-oY-Ajh"/>
+                            <constraint firstItem="Tut-k6-BgJ" firstAttribute="leading" secondItem="tYY-Ms-Tab" secondAttribute="trailing" constant="8" symbolic="YES" id="eIf-xR-5A0"/>
+                            <constraint firstItem="egY-nT-8uF" firstAttribute="top" secondItem="Tut-k6-BgJ" secondAttribute="bottom" constant="57" id="fJ8-Cw-DkM"/>
+                            <constraint firstItem="Tut-k6-BgJ" firstAttribute="trailing" secondItem="g1K-Xg-Jth" secondAttribute="trailing" id="gyQ-pK-jC9"/>
+                            <constraint firstItem="am8-Hm-dTr" firstAttribute="top" secondItem="imt-SH-nxS" secondAttribute="bottom" constant="122" id="hOD-yc-lSw"/>
+                            <constraint firstItem="YHt-mP-Xiu" firstAttribute="top" secondItem="egY-nT-8uF" secondAttribute="bottom" constant="1" id="laB-jI-G2q"/>
+                            <constraint firstItem="tYY-Ms-Tab" firstAttribute="top" secondItem="am8-Hm-dTr" secondAttribute="bottom" constant="8" symbolic="YES" id="p4D-Gx-6PT"/>
+                            <constraint firstItem="YHt-mP-Xiu" firstAttribute="top" secondItem="egY-nT-8uF" secondAttribute="bottom" constant="1" id="sPQ-YI-rR7"/>
+                            <constraint firstItem="am8-Hm-dTr" firstAttribute="centerX" secondItem="asG-dY-CKx" secondAttribute="centerX" id="ud2-gO-aRY"/>
+                            <constraint firstItem="egY-nT-8uF" firstAttribute="centerX" secondItem="asG-dY-CKx" secondAttribute="centerX" id="uo5-Lz-bm5"/>
+                            <constraint firstItem="YHt-mP-Xiu" firstAttribute="centerX" secondItem="asG-dY-CKx" secondAttribute="centerX" id="v0N-b6-u1u"/>
+                            <constraint firstItem="egY-nT-8uF" firstAttribute="top" secondItem="1yZ-Q0-zhh" secondAttribute="bottom" constant="52" id="zRL-am-urG"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -164,22 +205,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTN-lQ-6CR">
-                                <rect key="frame" x="305" y="579" width="60" height="68"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTN-lQ-6CR" userLabel="Controls View">
+                                <rect key="frame" x="295" y="579" width="64" height="68"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3c-sn-nOZ">
-                                        <rect key="frame" x="7" y="38" width="46" height="30"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Start">
-                                            <color key="titleColor" red="0.0" green="0.69016193579487184" blue="0.69016193579487184" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startTimer:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ajL-iG-3Uo"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pco-fl-lFc">
-                                        <rect key="frame" x="7" y="0.0" width="46" height="30"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pco-fl-lFc">
+                                        <rect key="frame" x="7" y="0.0" width="50" height="30"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="15"/>
                                         <state key="normal" title="Stop">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -188,11 +219,76 @@
                                             <segue destination="9G9-e1-3jD" kind="showDetail" id="Qja-eT-5DW"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3c-sn-nOZ">
+                                        <rect key="frame" x="7" y="38" width="50" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="T3c-sn-nOZ" secondAttribute="height" multiplier="23:15" id="exw-5l-THC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="15"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.0" green="0.69016193579487184" blue="0.69016193579487184" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startTimer:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ajL-iG-3Uo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="top" secondItem="zTN-lQ-6CR" secondAttribute="top" id="J2R-xy-NlL"/>
+                                    <constraint firstItem="T3c-sn-nOZ" firstAttribute="top" secondItem="Pco-fl-lFc" secondAttribute="bottom" constant="8" symbolic="YES" id="M76-iu-sOS"/>
+                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="centerX" secondItem="zTN-lQ-6CR" secondAttribute="centerX" id="oVn-W6-edQ"/>
+                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="leading" secondItem="T3c-sn-nOZ" secondAttribute="leading" id="p5f-J4-9t0"/>
+                                    <constraint firstItem="T3c-sn-nOZ" firstAttribute="centerX" secondItem="zTN-lQ-6CR" secondAttribute="centerX" id="ppL-GL-dvF"/>
+                                    <constraint firstItem="T3c-sn-nOZ" firstAttribute="width" secondItem="Pco-fl-lFc" secondAttribute="width" id="rBl-uf-q5e"/>
+                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="leading" secondItem="zTN-lQ-6CR" secondAttribute="leading" constant="7" id="tRR-Fd-ZjM"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-8p-5QR" userLabel="Back Arrow">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-Gs-ufm">
+                                <rect key="frame" x="9" y="579" width="170" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIv-01-sNI">
+                                        <rect key="frame" x="11" y="19" width="165" height="21"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t2-Qi-tsI">
+                                        <rect key="frame" x="11" y="0.0" width="165" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="ce7-W5-j8m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 min per mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve0-wc-vlC">
+                                        <rect key="frame" x="11" y="38" width="165" height="19"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3t2-Qi-tsI" firstAttribute="trailing" secondItem="Ve0-wc-vlC" secondAttribute="trailing" id="2aS-HU-raL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ve0-wc-vlC" secondAttribute="bottom" constant="11" id="6na-5P-ls8"/>
+                                    <constraint firstItem="Ve0-wc-vlC" firstAttribute="top" secondItem="3t2-Qi-tsI" secondAttribute="bottom" constant="19" id="FIB-4M-mJa"/>
+                                    <constraint firstItem="IIv-01-sNI" firstAttribute="top" secondItem="3t2-Qi-tsI" secondAttribute="bottom" id="HvE-4p-ppG"/>
+                                    <constraint firstAttribute="trailing" secondItem="3t2-Qi-tsI" secondAttribute="trailing" constant="-6" id="OEP-mW-fC6"/>
+                                    <constraint firstItem="3t2-Qi-tsI" firstAttribute="trailing" secondItem="IIv-01-sNI" secondAttribute="trailing" id="Pu2-Eg-ncl"/>
+                                    <constraint firstItem="3t2-Qi-tsI" firstAttribute="leading" secondItem="Q0d-Gs-ufm" secondAttribute="leading" constant="11" id="Wbj-Fh-mVc"/>
+                                    <constraint firstItem="3t2-Qi-tsI" firstAttribute="leading" secondItem="Ve0-wc-vlC" secondAttribute="leading" id="YcE-cg-OrE"/>
+                                    <constraint firstItem="3t2-Qi-tsI" firstAttribute="leading" secondItem="IIv-01-sNI" secondAttribute="leading" id="cRL-ma-0Ui"/>
+                                    <constraint firstItem="3t2-Qi-tsI" firstAttribute="top" secondItem="Q0d-Gs-ufm" secondAttribute="top" id="yRW-Em-lb8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-8p-5QR" userLabel="Back Arrow">
                                 <rect key="frame" x="20" y="20" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="BWx-aM-Yh8"/>
+                                    <constraint firstAttribute="height" constant="34" id="g4K-3y-6R9"/>
+                                </constraints>
                                 <state key="normal" image="left-orange-arrow.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -200,32 +296,21 @@
                                     <segue destination="zpk-ab-KpR" kind="showDetail" id="yat-7s-tx4"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-Gs-ufm">
-                                <rect key="frame" x="9" y="579" width="170" height="68"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIv-01-sNI">
-                                        <rect key="frame" x="11" y="23" width="165" height="21"/>
-                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t2-Qi-tsI">
-                                        <rect key="frame" x="11" y="8" width="165" height="21"/>
-                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00 min per mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve0-wc-vlC">
-                                        <rect key="frame" x="11" y="39" width="165" height="21"/>
-                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zTN-lQ-6CR" secondAttribute="bottom" constant="20" symbolic="YES" id="3Q3-2H-ney"/>
+                            <constraint firstItem="Q0d-Gs-ufm" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-7" id="H3N-XF-mgx"/>
+                            <constraint firstItem="Q0d-Gs-ufm" firstAttribute="height" secondItem="zTN-lQ-6CR" secondAttribute="height" id="Of8-mb-Mgi"/>
+                            <constraint firstItem="zTN-lQ-6CR" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="295" id="dVf-yu-RC3"/>
+                            <constraint firstItem="Q0d-Gs-ufm" firstAttribute="bottom" secondItem="zTN-lQ-6CR" secondAttribute="bottom" id="gWx-LW-vh4"/>
+                            <constraint firstItem="jkI-8p-5QR" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" id="n9W-Zc-Szr"/>
+                            <constraint firstItem="zTN-lQ-6CR" firstAttribute="top" secondItem="Q0d-Gs-ufm" secondAttribute="top" id="nB9-A1-YTZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zTN-lQ-6CR" secondAttribute="trailing" id="nKa-R9-36s"/>
+                            <constraint firstAttribute="trailing" secondItem="Q0d-Gs-ufm" secondAttribute="trailing" constant="196" id="qak-o6-vC1"/>
+                            <constraint firstItem="jkI-8p-5QR" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="4" id="uBJ-QF-Uqi"/>
+                            <constraint firstItem="Q0d-Gs-ufm" firstAttribute="top" secondItem="zTN-lQ-6CR" secondAttribute="bottom" constant="-68" id="vEL-ek-OlZ"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -251,17 +336,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-pu-U22">
-                                <rect key="frame" x="124" y="137" width="127" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-pu-U22">
+                                <rect key="frame" x="112" y="137" width="151" height="20"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trophy_emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-qF-XXd">
-                                <rect key="frame" x="67" y="166" width="240" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdW-Y5-ohc">
-                                <rect key="frame" x="132" y="486" width="113" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdW-Y5-ohc">
+                                <rect key="frame" x="127" y="302" width="121" height="64"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
                                 <state key="normal" title="Home" image="right-orange-arrow.png">
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -269,8 +352,25 @@
                                     <segue destination="t9W-ib-En6" kind="showDetail" id="Rpu-hq-xph"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy_emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-qF-XXd">
+                                <rect key="frame" x="63" y="166" width="249" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zDW-MM-GsG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NdW-Y5-ohc" firstAttribute="leading" secondItem="gkK-Mk-M78" secondAttribute="leadingMargin" constant="111" id="4tG-rN-2Sn"/>
+                            <constraint firstItem="mUq-qF-XXd" firstAttribute="centerX" secondItem="gkK-Mk-M78" secondAttribute="centerX" id="ABw-iz-Sz3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CmZ-pu-U22" secondAttribute="trailing" constant="96" id="Ar1-aE-Tsd"/>
+                            <constraint firstItem="CmZ-pu-U22" firstAttribute="leading" secondItem="gkK-Mk-M78" secondAttribute="leadingMargin" constant="96" id="GuN-SL-YIW"/>
+                            <constraint firstItem="NdW-Y5-ohc" firstAttribute="top" secondItem="2P7-0j-VZb" secondAttribute="bottom" constant="282" id="IMX-Xt-759"/>
+                            <constraint firstItem="CmZ-pu-U22" firstAttribute="top" secondItem="2P7-0j-VZb" secondAttribute="bottom" constant="117" id="QcC-6i-qCJ"/>
+                            <constraint firstItem="NdW-Y5-ohc" firstAttribute="top" secondItem="mUq-qF-XXd" secondAttribute="bottom" constant="8" symbolic="YES" id="Qdn-qw-EmK"/>
+                            <constraint firstItem="mUq-qF-XXd" firstAttribute="leading" secondItem="gkK-Mk-M78" secondAttribute="leadingMargin" constant="47" id="RvG-Lo-uVs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NdW-Y5-ohc" secondAttribute="trailing" constant="111" id="nli-Rv-e38"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -350,7 +450,7 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
         <image name="trophy_emoji.png" width="435" height="525"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zDD-9G-n4P"/>
-        <segue reference="kI8-0h-tsX"/>
+        <segue reference="yat-7s-tx4"/>
+        <segue reference="Rpu-hq-xph"/>
     </inferredMetricsTieBreakers>
 </document>
