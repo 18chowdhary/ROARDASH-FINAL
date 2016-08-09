@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC24121D1D5A2D56005CE97A /* apple_emoji_runner.png in Resources */ = {isa = PBXBuildFile; fileRef = CC24121C1D5A2D56005CE97A /* apple_emoji_runner.png */; };
 		CC24121F1D5A2F27005CE97A /* ROARDASH_FINAL.png in Resources */ = {isa = PBXBuildFile; fileRef = CC24121E1D5A2F27005CE97A /* ROARDASH_FINAL.png */; };
+		CC2412211D5A358A005CE97A /* icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2412201D5A358A005CE97A /* icon.xcassets */; };
 		CC4BBC0B1D58BEC300447767 /* MiddleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */; };
 		CC5AA25B1D58D57F00D45FAD /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */; };
 		CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C4061D50E14300928292 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		CC24121C1D5A2D56005CE97A /* apple_emoji_runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_emoji_runner.png; sourceTree = "<group>"; };
 		CC24121E1D5A2F27005CE97A /* ROARDASH_FINAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ROARDASH_FINAL.png; sourceTree = "<group>"; };
+		CC2412201D5A358A005CE97A /* icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icon.xcassets; sourceTree = "<group>"; };
 		CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleScreenViewController.swift; sourceTree = "<group>"; };
 		CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		CC60C4031D50E14300928292 /* Running screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				CC60C40C1D50E14300928292 /* GameViewController.swift */,
 				CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */,
 				CC60C40E1D50E14300928292 /* Main.storyboard */,
+				CC2412201D5A358A005CE97A /* icon.xcassets */,
 				CC60C4131D50E14300928292 /* LaunchScreen.storyboard */,
 				CC60C4161D50E14300928292 /* Info.plist */,
 				CCF773711D58FD120076C74E /* pretty blue gradient.jpg */,
@@ -284,6 +287,7 @@
 				CC60C43F1D50E3F200928292 /* lion_icon2.png in Resources */,
 				CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */,
 				CCF773721D58FD120076C74E /* pretty blue gradient.jpg in Resources */,
+				CC2412211D5A358A005CE97A /* icon.xcassets in Resources */,
 				CC60C4101D50E14300928292 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
