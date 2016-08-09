@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -17,24 +19,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROARDASH_FINAL.png" translatesAutoresizingMaskIntoConstraints="NO" id="BE8-kg-MSx">
-                                <rect key="frame" x="20" y="142" width="375" height="221"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upG-Ne-gy2">
-                                <rect key="frame" x="36" y="309" width="303" height="143"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upG-Ne-gy2">
+                                <rect key="frame" x="36" y="300" width="303" height="68"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome Message">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="Baskerville-SemiBoldItalic"/>
+                                            <font key="NSFont" size="18" name="Baskerville-SemiBold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-gQ-eia">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-gQ-eia">
                                 <rect key="frame" x="162" y="617" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="k0u-Kb-irF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
                                 <state key="normal" title="Credits">
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -42,8 +45,14 @@
                                     <segue destination="KPr-aj-1pS" kind="showDetail" id="VIu-es-Ysa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
-                                <rect key="frame" x="155" y="419" width="64" height="64"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROARDASH_FINAL.png" translatesAutoresizingMaskIntoConstraints="NO" id="4zZ-Z5-h7P">
+                                <rect key="frame" x="0.0" y="85" width="375" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4zZ-Z5-h7P" secondAttribute="height" multiplier="125:78" id="Sqa-N8-Y86"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
+                                <rect key="frame" x="155" y="354" width="64" height="64"/>
                                 <state key="normal" image="right-orange-arrow.png"/>
                                 <connections>
                                     <segue destination="zpk-ab-KpR" kind="showDetail" id="zDD-9G-n4P"/>
@@ -51,6 +60,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.81043009730121829" blue="0.011847903004282956" alpha="0.40239915780141844" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4zZ-Z5-h7P" firstAttribute="centerX" secondItem="upG-Ne-gy2" secondAttribute="centerX" id="6qf-KI-A9M"/>
+                            <constraint firstAttribute="trailing" secondItem="4zZ-Z5-h7P" secondAttribute="trailing" id="CH1-fl-nDf"/>
+                            <constraint firstItem="4zZ-Z5-h7P" firstAttribute="leading" secondItem="VXI-5V-Djd" secondAttribute="leading" id="CJY-Pg-U0L"/>
+                            <constraint firstItem="upG-Ne-gy2" firstAttribute="top" secondItem="BhL-EH-2jV" secondAttribute="bottom" constant="280" id="HKb-Iv-3mq"/>
+                            <constraint firstItem="4zZ-Z5-h7P" firstAttribute="top" secondItem="BhL-EH-2jV" secondAttribute="bottom" constant="65" id="IxJ-Oo-PeJ"/>
+                            <constraint firstItem="zEF-Lc-NeN" firstAttribute="top" secondItem="4zZ-Z5-h7P" secondAttribute="bottom" constant="35" id="Osa-um-cnh"/>
+                            <constraint firstItem="upG-Ne-gy2" firstAttribute="centerY" secondItem="VXI-5V-Djd" secondAttribute="centerY" id="ZUS-aq-8My"/>
+                            <constraint firstAttribute="bottom" secondItem="0Va-gQ-eia" secondAttribute="bottom" constant="20" symbolic="YES" id="mO9-Q6-Yhb"/>
+                            <constraint firstItem="4zZ-Z5-h7P" firstAttribute="centerX" secondItem="0Va-gQ-eia" secondAttribute="centerX" id="nrP-4T-qng"/>
+                            <constraint firstItem="upG-Ne-gy2" firstAttribute="leading" secondItem="VXI-5V-Djd" secondAttribute="leadingMargin" constant="20" id="pXt-eK-WYJ"/>
+                            <constraint firstItem="4zZ-Z5-h7P" firstAttribute="centerX" secondItem="zEF-Lc-NeN" secondAttribute="centerX" id="wvW-P0-6nK"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -328,7 +350,7 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
         <image name="trophy_emoji.png" width="435" height="525"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yat-7s-tx4"/>
+        <segue reference="zDD-9G-n4P"/>
         <segue reference="kI8-0h-tsX"/>
     </inferredMetricsTieBreakers>
 </document>
