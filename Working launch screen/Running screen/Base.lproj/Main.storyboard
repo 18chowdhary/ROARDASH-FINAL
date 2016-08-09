@@ -279,7 +279,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjJ-dC-o1w">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjJ-dC-o1w">
                                 <rect key="frame" x="20" y="62" width="335" height="1202.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
@@ -294,7 +294,8 @@ Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com
 “Swift 2.0 Programming Language Tutorial.” YouTube, uploaded by Funza Academy, www.youtube.com/watch?v=RKfe7xzHEZk. Accessed 5 Aug. 2016. This tutorial explains “AVFoundation : AVAudioPlayer , NSURL, NSBundle and more”, so we used it to learn how to use sound in an app.
 Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
