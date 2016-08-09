@@ -18,6 +18,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
     var lastPace: String!
     var lastPaceFloat: Float!
     var scene: GameScene!
+    var lastDistance: CLLocationDistance = 0.0
 
     
     //Creating the pace label,  timer label & distance label
@@ -163,7 +164,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             startLocation = currentLocation
         } else {
             // If the function has already been called, calculate distance travelled
-            let lastDistance = lastLocation.distanceFromLocation(currentLocation)
+            lastDistance = lastLocation.distanceFromLocation(currentLocation)
             distanceTraveled += lastDistance * 0.000621371
             
             let trimmedDistance = String(format: "%.2f", distanceTraveled)
@@ -195,7 +196,8 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
         let minPaceScalar = Float(0.2)
         let maxPaceScalar = Float(0.2)
         
-
+        if lastDistance != 0
+        {
         if lastPaceFloat > goalPaceFloat + minPaceScalar && lastPaceFloat < goalPaceFloat + maxPaceScalar  {
             print("Current pace is in acceptable range")
 //            if scene.lion.position.y >= 0.0 && scene.lion.position <= scene.height {
@@ -223,6 +225,11 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             if scene.lion.position.y >= scene.lion.centerRect.height + CGFloat(20) {
                 scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYBottom, duration: NSTimeInterval(actualDuration)))
             }
+        }
+        }
+        else
+        {
+            paceLabel.text = "No Pace"
         }
         
     }
