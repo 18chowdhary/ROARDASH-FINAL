@@ -17,8 +17,6 @@
 		CC60C4201D50E14300928292 /* Running_screenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C41F1D50E14300928292 /* Running_screenTests.swift */; };
 		CC60C42B1D50E14300928292 /* Running_screenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C42A1D50E14300928292 /* Running_screenUITests.swift */; };
 		CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC60C43E1D50E3F200928292 /* lion_icon.png */; };
-		CCAF11D21D550C29005ADD5F /* red-black-gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */; };
-		CCE0C1361D54B81A000E2943 /* baby-bunny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */; };
 		CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEDF1A41D50EE4300A44CCD /* user_icon.png */; };
 		CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCF773611D58C5B90076C74E /* lion_roar.mp3 */; };
 		CCF773661D58DAD40076C74E /* roardash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF773651D58DAD40076C74E /* roardash_logo.png */; };
@@ -62,8 +60,6 @@
 		CC60C42A1D50E14300928292 /* Running_screenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running_screenUITests.swift; sourceTree = "<group>"; };
 		CC60C42C1D50E14300928292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC60C43E1D50E3F200928292 /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
-		CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-black-gradient.jpg"; sourceTree = "<group>"; };
-		CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "baby-bunny.jpg"; sourceTree = "<group>"; };
 		CCEDF1A41D50EE4300A44CCD /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 		CCF773611D58C5B90076C74E /* lion_roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion_roar.mp3; sourceTree = "<group>"; };
 		CCF773651D58DAD40076C74E /* roardash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roardash_logo.png; sourceTree = "<group>"; };
@@ -130,8 +126,6 @@
 				CC60C40E1D50E14300928292 /* Main.storyboard */,
 				CC60C4131D50E14300928292 /* LaunchScreen.storyboard */,
 				CC60C4161D50E14300928292 /* Info.plist */,
-				CCE0C1351D54B81A000E2943 /* baby-bunny.jpg */,
-				CCAF11D11D550C29005ADD5F /* red-black-gradient.jpg */,
 				CCF773711D58FD120076C74E /* pretty blue gradient.jpg */,
 				CC60C43E1D50E3F200928292 /* lion_icon.png */,
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
@@ -267,10 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCF773741D58FDEC0076C74E /* left-orange-arrow.png in Resources */,
-				CCAF11D21D550C29005ADD5F /* red-black-gradient.jpg in Resources */,
 				CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
-				CCE0C1361D54B81A000E2943 /* baby-bunny.jpg in Resources */,
 				CCF773661D58DAD40076C74E /* roardash_logo.png in Resources */,
 				CCF773761D58FE720076C74E /* right-orange-arrow.png in Resources */,
 				CC60C43F1D50E3F200928292 /* lion_icon.png in Resources */,
