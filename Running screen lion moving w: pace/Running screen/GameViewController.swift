@@ -211,10 +211,10 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             
             
         } else if lastPaceFloat < goalPaceFloat + minPaceScalar {
-                //if scene.lion.position.y >= scene.user.position.y {
-            scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYBottom, duration: NSTimeInterval(actualDuration)))
             print("Current pace is faster")
-//                }
+            if scene.lion.position.y >= scene.lion.centerRect.height + CGFloat(20) {
+                scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYBottom, duration: NSTimeInterval(actualDuration)))
+            }
         }
         
     }
