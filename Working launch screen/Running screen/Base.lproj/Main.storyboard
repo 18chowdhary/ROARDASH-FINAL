@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Home Screen-->
+        <!--Home-->
         <scene sceneID="xe9-ON-tT0">
             <objects>
-                <viewController id="t9W-ib-En6" userLabel="Home Screen" customClass="HomeScreenViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t9W-ib-En6" userLabel="Home" customClass="HomeScreenViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BhL-EH-2jV"/>
                         <viewControllerLayoutGuide type="bottom" id="37y-jt-hF1"/>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-441.5" y="340.5"/>
         </scene>
-        <!--Middle Screen View Controller-->
+        <!--Middle View Controller-->
         <scene sceneID="csG-4Z-v6B">
             <objects>
-                <viewController id="zpk-ab-KpR" customClass="MiddleScreenViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zpk-ab-KpR" userLabel="Middle View Controller" customClass="MiddleScreenViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="imt-SH-nxS"/>
                         <viewControllerLayoutGuide type="bottom" id="Q8V-5T-hXm"/>
@@ -73,12 +73,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready to start running?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egY-nT-8uF">
-                                <rect key="frame" x="98" y="238" width="179" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-mP-Xiu">
                                 <rect key="frame" x="158" y="267" width="59" height="30"/>
                                 <state key="normal" title="Let's go!"/>
@@ -93,15 +87,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxt-ju-mZL">
-                                <rect key="frame" x="20" y="20" width="34" height="34"/>
-                                <state key="normal" image="left-orange-arrow.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="t9W-ib-En6" kind="showDetail" id="3bb-1U-mUs"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-k6-BgJ">
                                 <rect key="frame" x="229" y="172" width="18" height="16"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
@@ -120,8 +105,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your goal mile pace:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am8-Hm-dTr">
-                                <rect key="frame" x="75" y="142" width="198" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How fast do you want to run?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am8-Hm-dTr">
+                                <rect key="frame" x="76" y="142" width="223" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready to start running?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egY-nT-8uF">
+                                <rect key="frame" x="98" y="245" width="179" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -158,7 +149,7 @@
                                         <rect key="frame" x="7" y="38" width="46" height="30"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Start">
-                                            <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.69016193579487184" blue="0.69016193579487184" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="startTimer:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ajL-iG-3Uo"/>
@@ -178,7 +169,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-8p-5QR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-8p-5QR" userLabel="Back Arrow">
                                 <rect key="frame" x="20" y="20" width="34" height="34"/>
                                 <state key="normal" image="left-orange-arrow.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -247,6 +238,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trophy_emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-qF-XXd">
                                 <rect key="frame" x="67" y="166" width="240" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdW-Y5-ohc">
+                                <rect key="frame" x="132" y="486" width="113" height="64"/>
+                                <state key="normal" title="Home" image="right-orange-arrow.png">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t9W-ib-En6" kind="showDetail" id="Rpu-hq-xph"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -278,23 +278,44 @@
                                 <state key="normal" image="left-orange-arrow.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="t9W-ib-En6" kind="showDetail" id="kI8-0h-tsX"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjJ-dC-o1w">
                                 <rect key="frame" x="20" y="62" width="335" height="1202.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
+                                <mutableString key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
 
- Works Cited 
+We would like to thank our teachers: Carolyn Aquino, Emma Lurie, and Maria Galebach. Also a huge shoutout to Matt whose last name we don't know for his immensely valuable help in debugging and realizing our vision.
+
+
+
+Works Cited 
 “Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
+
+
 “Lion Emoji.” Emojipedia, Emojipedia Party Ltd., emojipedia-us.s3.amazonaws.com/cache/3b/be/3bbe9f3b14de7e8978e1ce75a1d86860.png. Accessed 9 Aug. 2016. This image represents the lion in the running screen.
+
+
 “Lion Face Outlined Front Free Icon.” Flat Icon, Freepik, 2014, www.flaticon.com/free-icon/lion-face-outlined-front_58593. Accessed 9 Aug. 2016. We used this icon in our logo.
-Maher, Matthew. “Building a Fitness App Using HealthKit to Track Walking Distance.” AppCoda, 22 Mar. 2016, www.appcoda.com/healthkit-introduction/#comments. Accessed 4 Aug. 2016. This tutorial creates an app called OneHourWalker. We adopted code for the timer and distance features of the running screen.
-Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com/trianglify-generate-colorful-triangle-meshes/trianglify-background-5/. This is one of our backgrounds
+
+
+Maher, Matthew. “Building a Fitness App Using HealthKit to Track Walking Distance.” AppCoda, 22 Mar. 2016, www.appcoda.com/healthkit-introduction/#comments. Accessed 4 Aug. 2016. This tutorial creates an app called OneHourWalker. We adapted code for the timer and distance features of the running screen.
+
+
+Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com/trianglify-generate-colorful-triangle-meshes/trianglify-background-5/. This is one of our backgrounds.
+
+
 “Swift Documentation.” Swift Resources. Apple Developer, Apple, developer.apple.com/swift/resources/. Accessed 8 Aug. 2016. The Apple Developer docs are sometimes useful in debugging or getting background information on some of Swift’s features. We referenced this source many times with specific questions.
+
+
 “Swift 2.0 Programming Language Tutorial.” YouTube, uploaded by Funza Academy, www.youtube.com/watch?v=RKfe7xzHEZk. Accessed 5 Aug. 2016. This tutorial explains “AVFoundation : AVAudioPlayer , NSURL, NSBundle and more”, so we used it to learn how to use sound in an app.
-Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.</string>
+
+
+Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
@@ -314,5 +335,6 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yat-7s-tx4"/>
+        <segue reference="Rpu-hq-xph"/>
     </inferredMetricsTieBreakers>
 </document>
