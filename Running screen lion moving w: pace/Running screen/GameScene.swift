@@ -36,7 +36,7 @@ import SpriteKit
 class GameScene: SKScene {
     // Creating lion & user
     let lion = SKSpriteNode(imageNamed: "lion_icon")
-    let user = SKSpriteNode(imageNamed: "user_icon")
+    let user = SKSpriteNode(imageNamed: "apple_emoji_runner.png")
     let background = SKSpriteNode(imageNamed: "pretty blue gradient.jpg")
     
     // Random positions & arcs (Kept if we need it in the future)
