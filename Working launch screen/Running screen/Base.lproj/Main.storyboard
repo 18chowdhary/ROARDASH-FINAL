@@ -208,9 +208,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTN-lQ-6CR" userLabel="Controls View">
                                 <rect key="frame" x="295" y="579" width="64" height="68"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3c-sn-nOZ">
+                                        <rect key="frame" x="8" y="0.0" width="50" height="19"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.0" green="0.69016193579487184" blue="0.69016193579487184" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startTimer:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ajL-iG-3Uo"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pco-fl-lFc">
-                                        <rect key="frame" x="7" y="0.0" width="50" height="30"/>
-                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="15"/>
+                                        <rect key="frame" x="7" y="38" width="50" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="mDM-eE-zIS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
                                         <state key="normal" title="Stop">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -219,29 +232,16 @@
                                             <segue destination="9G9-e1-3jD" kind="showDetail" id="Qja-eT-5DW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3c-sn-nOZ">
-                                        <rect key="frame" x="7" y="38" width="50" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="T3c-sn-nOZ" secondAttribute="height" multiplier="23:15" id="exw-5l-THC"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="15"/>
-                                        <state key="normal" title="Start">
-                                            <color key="titleColor" red="0.0" green="0.69016193579487184" blue="0.69016193579487184" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startTimer:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ajL-iG-3Uo"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="top" secondItem="zTN-lQ-6CR" secondAttribute="top" id="J2R-xy-NlL"/>
-                                    <constraint firstItem="T3c-sn-nOZ" firstAttribute="top" secondItem="Pco-fl-lFc" secondAttribute="bottom" constant="8" symbolic="YES" id="M76-iu-sOS"/>
-                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="centerX" secondItem="zTN-lQ-6CR" secondAttribute="centerX" id="oVn-W6-edQ"/>
-                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="leading" secondItem="T3c-sn-nOZ" secondAttribute="leading" id="p5f-J4-9t0"/>
-                                    <constraint firstItem="T3c-sn-nOZ" firstAttribute="centerX" secondItem="zTN-lQ-6CR" secondAttribute="centerX" id="ppL-GL-dvF"/>
-                                    <constraint firstItem="T3c-sn-nOZ" firstAttribute="width" secondItem="Pco-fl-lFc" secondAttribute="width" id="rBl-uf-q5e"/>
-                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="leading" secondItem="zTN-lQ-6CR" secondAttribute="leading" constant="7" id="tRR-Fd-ZjM"/>
+                                    <constraint firstAttribute="trailing" secondItem="T3c-sn-nOZ" secondAttribute="trailing" constant="6" id="0yf-Q5-DzZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pco-fl-lFc" secondAttribute="bottom" constant="11" id="K2E-rN-nxU"/>
+                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="top" secondItem="T3c-sn-nOZ" secondAttribute="bottom" constant="19" id="SAD-IZ-0P8"/>
+                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="centerX" secondItem="zTN-lQ-6CR" secondAttribute="centerX" id="feB-90-unX"/>
+                                    <constraint firstItem="T3c-sn-nOZ" firstAttribute="leading" secondItem="zTN-lQ-6CR" secondAttribute="leadingMargin" id="sLF-JK-uel"/>
+                                    <constraint firstItem="T3c-sn-nOZ" firstAttribute="top" secondItem="zTN-lQ-6CR" secondAttribute="top" id="vFE-cO-GIC"/>
+                                    <constraint firstItem="Pco-fl-lFc" firstAttribute="leading" secondItem="zTN-lQ-6CR" secondAttribute="leading" constant="7" id="wcg-dJ-CqA"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-Gs-ufm">
@@ -465,6 +465,6 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kI8-0h-tsX"/>
-        <segue reference="zDD-9G-n4P"/>
+        <segue reference="yat-7s-tx4"/>
     </inferredMetricsTieBreakers>
 </document>
