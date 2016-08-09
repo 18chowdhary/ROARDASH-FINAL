@@ -66,7 +66,7 @@ class GameScene: SKScene {
         // Making user appear on screen
         // Set position
         user.zPosition = 1
-        user.position = CGPoint(x: size.width * 0.5, y: size.height * 0.9)
+        user.position = CGPoint(x: size.width * 0.5, y: size.height * 0.85)
         // Making user appear
         addChild(user)
         
