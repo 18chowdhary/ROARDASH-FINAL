@@ -12,6 +12,7 @@
 		CC2412211D5A358A005CE97A /* icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2412201D5A358A005CE97A /* icon.xcassets */; };
 		CC4BBC0B1D58BEC300447767 /* MiddleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */; };
 		CC5AA25B1D58D57F00D45FAD /* SoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */; };
+		CC5C09101D5A681D00C8F92F /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = CC5C090F1D5A681D00C8F92F /* pattern.png */; };
 		CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C4061D50E14300928292 /* AppDelegate.swift */; };
 		CC60C40B1D50E14300928292 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40A1D50E14300928292 /* GameScene.swift */; };
 		CC60C40D1D50E14300928292 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC60C40C1D50E14300928292 /* GameViewController.swift */; };
@@ -54,6 +55,7 @@
 		CC2412201D5A358A005CE97A /* icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icon.xcassets; sourceTree = "<group>"; };
 		CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleScreenViewController.swift; sourceTree = "<group>"; };
 		CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
+		CC5C090F1D5A681D00C8F92F /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
 		CC60C4031D50E14300928292 /* Running screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60C4061D50E14300928292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC60C40A1D50E14300928292 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
 				CCF773611D58C5B90076C74E /* lion_roar.mp3 */,
 				CCF773731D58FDEC0076C74E /* left-orange-arrow.png */,
+				CC5C090F1D5A681D00C8F92F /* pattern.png */,
 				CCF773751D58FE720076C74E /* right-orange-arrow.png */,
 			);
 			path = "Running screen";
@@ -277,6 +280,7 @@
 			files = (
 				CCF773741D58FDEC0076C74E /* left-orange-arrow.png in Resources */,
 				CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */,
+				CC5C09101D5A681D00C8F92F /* pattern.png in Resources */,
 				CC7A43901D5A2CA00091C64A /* lion_icon.png in Resources */,
 				CCF7737E1D5A2BDF0076C74E /* trophy_emoji.png in Resources */,
 				CC7A438E1D5A2C740091C64A /* apple_emoji_runner2.png in Resources */,

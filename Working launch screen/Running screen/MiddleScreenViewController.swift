@@ -15,12 +15,14 @@ class MiddleScreenViewController : UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var nextButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.titleLabel?.textColor = UIColor.redColor()
      //   nextButton.enabled = false
         goalPaceTextField.keyboardType = .DecimalPad
         goalPaceTextField.delegate = self
+        self.view.backgroundColor = UIColor(patternImage:UIImage(named: "pattern.png")!)
     }
     
     override func didReceiveMemoryWarning() {

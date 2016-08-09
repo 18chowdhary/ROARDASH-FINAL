@@ -23,7 +23,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
     //Creating the pace label,  timer label & distance label
     @IBOutlet weak var paceLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var goalPaceLabel: UILabel!
+    //@IBOutlet weak var goalPaceLabel: UILabel!
     @IBOutlet weak var milesLabel: UILabel!
     var myAudioPlayer = AVAudioPlayer()
     
@@ -48,7 +48,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         
         
-        goalPaceLabel.hidden = true
+       // goalPaceLabel.hidden = true
 //        goalPaceLabel.text! = goalPace
         print("The goal pace in GameViewController is \(goalPace)")
         goalPaceFloat = Float(goalPace)
