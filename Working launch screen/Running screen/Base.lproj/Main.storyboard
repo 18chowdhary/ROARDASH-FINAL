@@ -395,8 +395,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfQ-wK-VWP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfQ-wK-VWP">
                                 <rect key="frame" x="20" y="20" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="B4l-D2-oBZ"/>
+                                    <constraint firstAttribute="height" constant="34" id="wtq-K7-GqS"/>
+                                </constraints>
                                 <state key="normal" image="left-orange-arrow.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -404,9 +408,12 @@
                                     <segue destination="t9W-ib-En6" kind="showDetail" id="kI8-0h-tsX"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="black" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjJ-dC-o1w">
-                                <rect key="frame" x="20" y="62" width="335" height="1202.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjJ-dC-o1w">
+                                <rect key="frame" x="20" y="62" width="335" height="1203"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1203" id="mxc-zY-z6I"/>
+                                </constraints>
                                 <mutableString key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
 
 We would like to thank our teachers: Carolyn Aquino, Emma Lurie, and Maria Galebach. Also a huge shoutout to Matt whose last name we don't know for his immensely valuable help in debugging and realizing our vision.
@@ -436,6 +443,13 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hfQ-wK-VWP" firstAttribute="leading" secondItem="vS8-Mk-RPY" secondAttribute="leadingMargin" constant="4" id="34B-F5-IoQ"/>
+                            <constraint firstItem="hfQ-wK-VWP" firstAttribute="leading" secondItem="xjJ-dC-o1w" secondAttribute="leading" id="AFX-mL-41v"/>
+                            <constraint firstItem="xjJ-dC-o1w" firstAttribute="top" secondItem="hfQ-wK-VWP" secondAttribute="bottom" constant="8" symbolic="YES" id="GqW-4l-G5K"/>
+                            <constraint firstItem="xjJ-dC-o1w" firstAttribute="centerX" secondItem="vS8-Mk-RPY" secondAttribute="centerX" id="QB4-ZN-h2v"/>
+                            <constraint firstItem="hfQ-wK-VWP" firstAttribute="top" secondItem="WZA-L1-OrL" secondAttribute="bottom" id="v4u-eV-BCC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIV-pB-ozZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -451,6 +465,6 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yat-7s-tx4"/>
-        <segue reference="Rpu-hq-xph"/>
+        <segue reference="kI8-0h-tsX"/>
     </inferredMetricsTieBreakers>
 </document>
