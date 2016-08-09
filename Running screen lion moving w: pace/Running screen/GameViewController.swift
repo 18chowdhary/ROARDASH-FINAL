@@ -204,6 +204,14 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             
         } else if lastPaceFloat > goalPaceFloat + maxPaceScalar {
             print("Current pace is too slow")
+            
+            //allows user to keep playing their background music
+            let sess = AVAudioSession.sharedInstance()
+            if sess.otherAudioPlaying {
+                _ = try? sess.setCategory(AVAudioSessionCategoryAmbient, withOptions: .DuckOthers)
+                _ = try? sess.setActive(true, withOptions: [])
+            }
+            
             myAudioPlayer.play()
             if scene.lion.position.y <= scene.user.position.y - CGFloat(scene.user.centerRect.height) {
                 scene.lion.runAction(SKAction.moveByX(CGFloat(0.0), y: deltaYTop, duration: NSTimeInterval(actualDuration)))
