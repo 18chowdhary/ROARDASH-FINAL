@@ -219,6 +219,17 @@
                     <view key="view" contentMode="scaleToFill" id="gkK-Mk-M78">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-pu-U22">
+                                <rect key="frame" x="124" y="137" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trophy_emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-qF-XXd">
+                                <rect key="frame" x="67" y="166" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -232,6 +243,7 @@
         <image name="left-orange-arrow.png" width="64" height="64"/>
         <image name="right-orange-arrow.png" width="64" height="64"/>
         <image name="roardash_logo.png" width="646" height="408"/>
+        <image name="trophy_emoji.png" width="435" height="525"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yat-7s-tx4"/>

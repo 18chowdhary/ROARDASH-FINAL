@@ -24,6 +24,7 @@
 		CCF773741D58FDEC0076C74E /* left-orange-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF773731D58FDEC0076C74E /* left-orange-arrow.png */; };
 		CCF773761D58FE720076C74E /* right-orange-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF773751D58FE720076C74E /* right-orange-arrow.png */; };
 		CCF7737C1D5917180076C74E /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF7737B1D5917180076C74E /* HomeScreenViewController.swift */; };
+		CCF7737E1D5A2BDF0076C74E /* trophy_emoji.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF7737D1D5A2BDF0076C74E /* trophy_emoji.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		CCF773731D58FDEC0076C74E /* left-orange-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-orange-arrow.png"; sourceTree = "<group>"; };
 		CCF773751D58FE720076C74E /* right-orange-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-orange-arrow.png"; sourceTree = "<group>"; };
 		CCF7737B1D5917180076C74E /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		CCF7737D1D5A2BDF0076C74E /* trophy_emoji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy_emoji.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				CC60C4131D50E14300928292 /* LaunchScreen.storyboard */,
 				CC60C4161D50E14300928292 /* Info.plist */,
 				CCF773711D58FD120076C74E /* pretty blue gradient.jpg */,
+				CCF7737D1D5A2BDF0076C74E /* trophy_emoji.png */,
 				CC60C43E1D50E3F200928292 /* lion_icon.png */,
 				CCEDF1A41D50EE4300A44CCD /* user_icon.png */,
 				CCF773611D58C5B90076C74E /* lion_roar.mp3 */,
@@ -262,6 +265,7 @@
 			files = (
 				CCF773741D58FDEC0076C74E /* left-orange-arrow.png in Resources */,
 				CCEDF1A51D50EE4300A44CCD /* user_icon.png in Resources */,
+				CCF7737E1D5A2BDF0076C74E /* trophy_emoji.png in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
 				CCF773661D58DAD40076C74E /* roardash_logo.png in Resources */,
 				CCF773761D58FE720076C74E /* right-orange-arrow.png in Resources */,
