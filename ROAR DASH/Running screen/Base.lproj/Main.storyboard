@@ -431,7 +431,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="594" id="S4N-l4-3JW"/>
                                         </constraints>
-                                        <string key="text">“Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
+                                        <mutableString key="text">“Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
 
 “Lion Emoji.” Emojipedia, Emojipedia Party Ltd., emojipedia-us.s3.amazonaws.com/cache/3b/be/3bbe9f3b14de7e8978e1ce75a1d86860.png. Accessed 9 Aug. 2016. This image represents the lion in the running screen.
 
@@ -446,8 +446,8 @@ Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com
 “Swift 2.0 Programming Language Tutorial.” YouTube, uploaded by Funza Academy, www.youtube.com/watch?v=RKfe7xzHEZk. Accessed 5 Aug. 2016. This tutorial explains “AVFoundation : AVAudioPlayer , NSURL, NSBundle and more”, so we used it to learn how to use sound in an app.
 
 Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.
-</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                     </textView>
@@ -502,6 +502,6 @@ The ROARDASH logo was created using sketch.io. Backgrounds were made with Triang
         <image name="trophy_emoji.png" width="435" height="525"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zpe-AH-b9I"/>
+        <segue reference="kI8-0h-tsX"/>
     </inferredMetricsTieBreakers>
 </document>
