@@ -24,9 +24,6 @@
 		CC796D271D5AB7A6000D962C /* pattern_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CC796D261D5AB7A6000D962C /* pattern_3.png */; };
 		CC7A438E1D5A2C740091C64A /* apple_emoji_runner2.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7A438D1D5A2C740091C64A /* apple_emoji_runner2.png */; };
 		CC7A43901D5A2CA00091C64A /* lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC7A438F1D5A2CA00091C64A /* lion_icon.png */; };
-		CCD0DF191D5B664A002B426D /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD0DF181D5B664A002B426D /* CreditsViewController.swift */; };
-		CCD0DF1B1D5B6C5E002B426D /* pattern_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD0DF1A1D5B6C5E002B426D /* pattern_4.png */; };
-		CCD0DF1D1D5B6CD5002B426D /* LOGO_FINA_whitebackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCD0DF1C1D5B6CD5002B426D /* LOGO_FINA_whitebackground.jpg */; };
 		CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCF773611D58C5B90076C74E /* lion_roar.mp3 */; };
 		CCF773721D58FD120076C74E /* pattern_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCF773711D58FD120076C74E /* pattern_2.jpg */; };
 		CCF773741D58FDEC0076C74E /* left-orange-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF773731D58FDEC0076C74E /* left-orange-arrow.png */; };
@@ -76,9 +73,6 @@
 		CC796D261D5AB7A6000D962C /* pattern_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern_3.png; sourceTree = "<group>"; };
 		CC7A438D1D5A2C740091C64A /* apple_emoji_runner2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_emoji_runner2.png; sourceTree = "<group>"; };
 		CC7A438F1D5A2CA00091C64A /* lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion_icon.png; sourceTree = "<group>"; };
-		CCD0DF181D5B664A002B426D /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
-		CCD0DF1A1D5B6C5E002B426D /* pattern_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern_4.png; sourceTree = "<group>"; };
-		CCD0DF1C1D5B6CD5002B426D /* LOGO_FINA_whitebackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LOGO_FINA_whitebackground.jpg; sourceTree = "<group>"; };
 		CCF773611D58C5B90076C74E /* lion_roar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lion_roar.mp3; sourceTree = "<group>"; };
 		CCF773711D58FD120076C74E /* pattern_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattern_2.jpg; sourceTree = "<group>"; };
 		CCF773731D58FDEC0076C74E /* left-orange-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-orange-arrow.png"; sourceTree = "<group>"; };
@@ -143,12 +137,9 @@
 				CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */,
 				CC796D241D5AB6F6000D962C /* EndViewController.swift */,
 				CC60C40E1D50E14300928292 /* Main.storyboard */,
-				CCD0DF181D5B664A002B426D /* CreditsViewController.swift */,
 				CC2412201D5A358A005CE97A /* icon.xcassets */,
 				CC60C4131D50E14300928292 /* LaunchScreen.storyboard */,
-				CCD0DF1C1D5B6CD5002B426D /* LOGO_FINA_whitebackground.jpg */,
 				CC60C4161D50E14300928292 /* Info.plist */,
-				CCD0DF1A1D5B6C5E002B426D /* pattern_4.png */,
 				CC24121E1D5A2F27005CE97A /* ROARDASH_FINAL.png */,
 				CC5C090F1D5A681D00C8F92F /* pattern.png */,
 				CC24121C1D5A2D56005CE97A /* apple_emoji_runner.png */,
@@ -291,13 +282,11 @@
 				CC5C09101D5A681D00C8F92F /* pattern.png in Resources */,
 				CC7A43901D5A2CA00091C64A /* lion_icon.png in Resources */,
 				CCF7737E1D5A2BDF0076C74E /* trophy_emoji.png in Resources */,
-				CCD0DF1B1D5B6C5E002B426D /* pattern_4.png in Resources */,
 				CC7A438E1D5A2C740091C64A /* apple_emoji_runner2.png in Resources */,
 				CC24121F1D5A2F27005CE97A /* ROARDASH_FINAL.png in Resources */,
 				CC24121D1D5A2D56005CE97A /* apple_emoji_runner.png in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
 				CCF773761D58FE720076C74E /* right-orange-arrow.png in Resources */,
-				CCD0DF1D1D5B6CD5002B426D /* LOGO_FINA_whitebackground.jpg in Resources */,
 				CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */,
 				CCF773721D58FD120076C74E /* pattern_2.jpg in Resources */,
 				CC2412211D5A358A005CE97A /* icon.xcassets in Resources */,
@@ -330,7 +319,6 @@
 				CC5AA25B1D58D57F00D45FAD /* SoundViewController.swift in Sources */,
 				CC796D251D5AB6F6000D962C /* EndViewController.swift in Sources */,
 				CC60C40B1D50E14300928292 /* GameScene.swift in Sources */,
-				CCD0DF191D5B664A002B426D /* CreditsViewController.swift in Sources */,
 				CC60C40D1D50E14300928292 /* GameViewController.swift in Sources */,
 				CC4BBC0B1D58BEC300447767 /* MiddleScreenViewController.swift in Sources */,
 				CC60C4071D50E14300928292 /* AppDelegate.swift in Sources */,
