@@ -45,7 +45,7 @@
                                     <segue destination="KPr-aj-1pS" kind="showDetail" id="VIu-es-Ysa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
                                 <rect key="frame" x="155" y="354" width="64" height="64"/>
                                 <state key="normal" image="right-orange-arrow.png"/>
                                 <connections>
