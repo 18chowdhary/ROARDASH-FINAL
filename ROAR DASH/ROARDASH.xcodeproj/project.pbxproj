@@ -244,7 +244,7 @@
 				TargetAttributes = {
 					CC60C4021D50E14300928292 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = H9C424GL3P;
+						DevelopmentTeam = FGU95EW8L7;
 					};
 					CC60C41A1D50E14300928292 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -474,7 +474,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Running screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.ROARDASH-ME";
+				PRODUCT_BUNDLE_IDENTIFIER = Roardash.RhombusRowan;
 				PRODUCT_NAME = ROARDASH;
 				PROVISIONING_PROFILE = "";
 			};
@@ -488,7 +488,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Running screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.ROARDASH-ME";
+				PRODUCT_BUNDLE_IDENTIFIER = Roardash.RhombusRowan;
 				PRODUCT_NAME = ROARDASH;
 				PROVISIONING_PROFILE = "";
 			};
