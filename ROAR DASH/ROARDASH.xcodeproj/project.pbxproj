@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC23F86B1D5B75F100672253 /* pattern_5.png in Resources */ = {isa = PBXBuildFile; fileRef = CC23F86A1D5B75F100672253 /* pattern_5.png */; };
 		CC24121D1D5A2D56005CE97A /* apple_emoji_runner.png in Resources */ = {isa = PBXBuildFile; fileRef = CC24121C1D5A2D56005CE97A /* apple_emoji_runner.png */; };
 		CC24121F1D5A2F27005CE97A /* ROARDASH_FINAL.png in Resources */ = {isa = PBXBuildFile; fileRef = CC24121E1D5A2F27005CE97A /* ROARDASH_FINAL.png */; };
 		CC2412211D5A358A005CE97A /* icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC2412201D5A358A005CE97A /* icon.xcassets */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC23F86A1D5B75F100672253 /* pattern_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern_5.png; sourceTree = "<group>"; };
 		CC24121C1D5A2D56005CE97A /* apple_emoji_runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple_emoji_runner.png; sourceTree = "<group>"; };
 		CC24121E1D5A2F27005CE97A /* ROARDASH_FINAL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ROARDASH_FINAL.png; sourceTree = "<group>"; };
 		CC2412201D5A358A005CE97A /* icon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icon.xcassets; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				CCF773711D58FD120076C74E /* pattern_2.jpg */,
 				CCF773611D58C5B90076C74E /* lion_roar.mp3 */,
 				CC796D261D5AB7A6000D962C /* pattern_3.png */,
+				CC23F86A1D5B75F100672253 /* pattern_5.png */,
 				CCF7737D1D5A2BDF0076C74E /* trophy_emoji.png */,
 				CCF773731D58FDEC0076C74E /* left-orange-arrow.png */,
 				CCF773751D58FE720076C74E /* right-orange-arrow.png */,
@@ -285,6 +288,7 @@
 				CC7A438E1D5A2C740091C64A /* apple_emoji_runner2.png in Resources */,
 				CC24121F1D5A2F27005CE97A /* ROARDASH_FINAL.png in Resources */,
 				CC24121D1D5A2D56005CE97A /* apple_emoji_runner.png in Resources */,
+				CC23F86B1D5B75F100672253 /* pattern_5.png in Resources */,
 				CC60C4151D50E14300928292 /* LaunchScreen.storyboard in Resources */,
 				CCF773761D58FE720076C74E /* right-orange-arrow.png in Resources */,
 				CCF773621D58C5B90076C74E /* lion_roar.mp3 in Resources */,
