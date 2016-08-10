@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,11 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROARDASH_FINAL.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xl2-jy-Rt2">
-                                <rect key="frame" x="0.0" y="85" width="375" height="234"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF3-3H-GE8">
-                                <rect key="frame" x="36" y="300" width="303" height="68"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zF3-3H-GE8">
+                                <rect key="frame" x="118" y="300" width="140" height="21"/>
                                 <attributedString key="attributedText">
                                     <fragment content="(c) Girls Who Code">
                                         <attributes>
@@ -33,8 +31,22 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROARDASH_FINAL.png" translatesAutoresizingMaskIntoConstraints="NO" id="y8f-XZ-fKS">
+                                <rect key="frame" x="0.0" y="85" width="375" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y8f-XZ-fKS" secondAttribute="height" multiplier="125:78" id="tJl-uc-Mkc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y8f-XZ-fKS" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="5hQ-ZC-7ZB"/>
+                            <constraint firstItem="y8f-XZ-fKS" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="65" id="P5K-Ls-Ow1"/>
+                            <constraint firstItem="y8f-XZ-fKS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="RKX-te-OPH"/>
+                            <constraint firstItem="y8f-XZ-fKS" firstAttribute="centerX" secondItem="zF3-3H-GE8" secondAttribute="centerX" id="W7X-nM-fjv"/>
+                            <constraint firstItem="zF3-3H-GE8" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="280" id="WfZ-Gy-qkY"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="y8f-XZ-fKS" secondAttribute="bottom" constant="348" id="bMS-Ca-IpM"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>

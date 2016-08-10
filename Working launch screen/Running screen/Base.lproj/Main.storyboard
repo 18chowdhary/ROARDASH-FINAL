@@ -45,12 +45,6 @@
                                     <segue destination="KPr-aj-1pS" kind="showDetail" id="VIu-es-Ysa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROARDASH_FINAL.png" translatesAutoresizingMaskIntoConstraints="NO" id="4zZ-Z5-h7P">
-                                <rect key="frame" x="0.0" y="85" width="375" height="234"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="4zZ-Z5-h7P" secondAttribute="height" multiplier="125:78" id="Sqa-N8-Y86"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
                                 <rect key="frame" x="155" y="354" width="64" height="64"/>
                                 <state key="normal" image="right-orange-arrow.png"/>
@@ -58,6 +52,12 @@
                                     <segue destination="zpk-ab-KpR" kind="showDetail" id="zDD-9G-n4P"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROARDASH_FINAL.png" translatesAutoresizingMaskIntoConstraints="NO" id="4zZ-Z5-h7P">
+                                <rect key="frame" x="0.0" y="85" width="375" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4zZ-Z5-h7P" secondAttribute="height" multiplier="125:78" id="Sqa-N8-Y86"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85882352941176465" blue="0.44577976954204501" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -101,7 +101,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Ms-Tab">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYY-Ms-Tab">
                                 <rect key="frame" x="128" y="171" width="93" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -148,7 +148,7 @@
                                     <constraint firstAttribute="width" constant="72" id="Ljo-e3-OVD"/>
                                     <constraint firstAttribute="height" constant="30" id="a1P-bU-MXN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="18"/>
                                 <state key="normal" title="Let's go!">
                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -191,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZK-Am-DzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180.5" y="332.5"/>
+            <point key="canvasLocation" x="180.5" y="340.5"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -210,6 +210,9 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3c-sn-nOZ">
                                         <rect key="frame" x="8" y="0.0" width="50" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="T3c-sn-nOZ" secondAttribute="height" multiplier="50:19" id="3IR-7h-bew"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" red="0.0" green="0.69016193579487184" blue="0.69016193579487184" alpha="1" colorSpace="calibratedRGB"/>
@@ -221,6 +224,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pco-fl-lFc">
                                         <rect key="frame" x="7" y="38" width="50" height="19"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" secondItem="Pco-fl-lFc" secondAttribute="height" multiplier="50:19" id="UB3-4q-p37"/>
                                             <constraint firstAttribute="height" constant="19" id="mDM-eE-zIS"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
@@ -236,6 +240,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="T3c-sn-nOZ" secondAttribute="trailing" constant="6" id="0yf-Q5-DzZ"/>
+                                    <constraint firstAttribute="width" secondItem="zTN-lQ-6CR" secondAttribute="height" multiplier="16:17" id="JPb-AC-UYR"/>
                                     <constraint firstAttribute="bottom" secondItem="Pco-fl-lFc" secondAttribute="bottom" constant="11" id="K2E-rN-nxU"/>
                                     <constraint firstItem="Pco-fl-lFc" firstAttribute="top" secondItem="T3c-sn-nOZ" secondAttribute="bottom" constant="19" id="SAD-IZ-0P8"/>
                                     <constraint firstItem="Pco-fl-lFc" firstAttribute="centerX" secondItem="zTN-lQ-6CR" secondAttribute="centerX" id="feB-90-unX"/>
@@ -275,6 +280,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Ve0-wc-vlC" secondAttribute="bottom" constant="11" id="6na-5P-ls8"/>
                                     <constraint firstItem="Ve0-wc-vlC" firstAttribute="top" secondItem="3t2-Qi-tsI" secondAttribute="bottom" constant="19" id="FIB-4M-mJa"/>
                                     <constraint firstItem="IIv-01-sNI" firstAttribute="top" secondItem="3t2-Qi-tsI" secondAttribute="bottom" id="HvE-4p-ppG"/>
+                                    <constraint firstAttribute="width" secondItem="Q0d-Gs-ufm" secondAttribute="height" multiplier="5:2" id="MAV-DY-QNN"/>
                                     <constraint firstAttribute="trailing" secondItem="3t2-Qi-tsI" secondAttribute="trailing" constant="-6" id="OEP-mW-fC6"/>
                                     <constraint firstItem="3t2-Qi-tsI" firstAttribute="trailing" secondItem="IIv-01-sNI" secondAttribute="trailing" id="Pu2-Eg-ncl"/>
                                     <constraint firstItem="3t2-Qi-tsI" firstAttribute="leading" secondItem="Q0d-Gs-ufm" secondAttribute="leading" constant="11" id="Wbj-Fh-mVc"/>
@@ -293,7 +299,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zpk-ab-KpR" kind="showDetail" id="yat-7s-tx4"/>
+                                    <segue destination="t9W-ib-En6" kind="showDetail" id="zpe-AH-b9I"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -322,12 +328,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792.5" y="332.5"/>
+            <point key="canvasLocation" x="792.5" y="340.5"/>
         </scene>
         <!--End Screen Controller-->
         <scene sceneID="uex-98-CJp">
             <objects>
-                <viewController id="9G9-e1-3jD" userLabel="End Screen Controller" sceneMemberID="viewController">
+                <viewController id="9G9-e1-3jD" userLabel="End Screen Controller" customClass="EndViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2P7-0j-VZb"/>
                         <viewControllerLayoutGuide type="bottom" id="Qfz-IS-2W1"/>
@@ -342,41 +348,54 @@
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdW-Y5-ohc">
-                                <rect key="frame" x="127" y="302" width="121" height="64"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
-                                <state key="normal" title="Home" image="right-orange-arrow.png">
-                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="t9W-ib-En6" kind="showDetail" id="Rpu-hq-xph"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Run complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzX-Ai-PPe">
+                                <rect key="frame" x="127" y="302" width="121" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="Dld-BW-u1z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy_emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="mUq-qF-XXd">
                                 <rect key="frame" x="63" y="166" width="249" height="128"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="mUq-qF-XXd" secondAttribute="height" multiplier="249:128" id="DHp-LJ-RKl"/>
                                     <constraint firstAttribute="height" constant="128" id="zDW-MM-GsG"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right-orange-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="6xL-eP-qMu" userLabel="Forward Arrow Label">
+                                <rect key="frame" x="153" y="348" width="69" height="64"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhZ-sE-8IF" userLabel="Home Label">
+                                <rect key="frame" x="163" y="420" width="49" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93p-Ys-M8A" userLabel="Home Button">
+                                <rect key="frame" x="153" y="348" width="69" height="93"/>
+                                <connections>
+                                    <segue destination="t9W-ib-En6" kind="showDetail" id="DzC-7B-UVe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NdW-Y5-ohc" firstAttribute="leading" secondItem="gkK-Mk-M78" secondAttribute="leadingMargin" constant="111" id="4tG-rN-2Sn"/>
                             <constraint firstItem="mUq-qF-XXd" firstAttribute="centerX" secondItem="gkK-Mk-M78" secondAttribute="centerX" id="ABw-iz-Sz3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CmZ-pu-U22" secondAttribute="trailing" constant="96" id="Ar1-aE-Tsd"/>
                             <constraint firstItem="CmZ-pu-U22" firstAttribute="leading" secondItem="gkK-Mk-M78" secondAttribute="leadingMargin" constant="96" id="GuN-SL-YIW"/>
-                            <constraint firstItem="NdW-Y5-ohc" firstAttribute="top" secondItem="2P7-0j-VZb" secondAttribute="bottom" constant="282" id="IMX-Xt-759"/>
                             <constraint firstItem="CmZ-pu-U22" firstAttribute="top" secondItem="2P7-0j-VZb" secondAttribute="bottom" constant="117" id="QcC-6i-qCJ"/>
-                            <constraint firstItem="NdW-Y5-ohc" firstAttribute="top" secondItem="mUq-qF-XXd" secondAttribute="bottom" constant="8" symbolic="YES" id="Qdn-qw-EmK"/>
-                            <constraint firstItem="mUq-qF-XXd" firstAttribute="leading" secondItem="gkK-Mk-M78" secondAttribute="leadingMargin" constant="47" id="RvG-Lo-uVs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NdW-Y5-ohc" secondAttribute="trailing" constant="111" id="nli-Rv-e38"/>
+                            <constraint firstItem="lzX-Ai-PPe" firstAttribute="centerX" secondItem="mUq-qF-XXd" secondAttribute="centerX" id="Shk-Fr-B4E"/>
+                            <constraint firstItem="mUq-qF-XXd" firstAttribute="top" secondItem="CmZ-pu-U22" secondAttribute="bottom" constant="9" id="ihb-U4-tnF"/>
+                            <constraint firstItem="lzX-Ai-PPe" firstAttribute="top" secondItem="mUq-qF-XXd" secondAttribute="bottom" constant="8" id="lmo-rx-Xlh"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cAq-bd-3aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421.5" y="332.5"/>
+            <point key="canvasLocation" x="1421.5" y="340.5"/>
         </scene>
         <!--Credits-->
         <scene sceneID="C1z-iq-SLW">
@@ -390,12 +409,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TrM-nn-g5k">
-                                <rect key="frame" x="-1619" y="139" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfQ-wK-VWP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfQ-wK-VWP" userLabel="Back Arrow">
                                 <rect key="frame" x="20" y="20" width="34" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="34" id="B4l-D2-oBZ"/>
@@ -408,20 +422,16 @@
                                     <segue destination="t9W-ib-En6" kind="showDetail" id="kI8-0h-tsX"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjJ-dC-o1w">
-                                <rect key="frame" x="20" y="62" width="335" height="1203"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1203" id="mxc-zY-z6I"/>
-                                </constraints>
-                                <string key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
-
-We would like to thank our teachers: Carolyn Aquino, Emma Lurie, and Maria Galebach. Also a huge shoutout to Matt whose last name we don't know for his immensely valuable help in debugging and realizing our vision.
-
-The ROARDASH logo was created using sketch.io. Backgrounds were made with Trianglify.
-
-
-“Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IG-5j-4Oh">
+                                <rect key="frame" x="20" y="286" width="343" height="368"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xjJ-dC-o1w" userLabel="Works Cited">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="594"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="594" id="S4N-l4-3JW"/>
+                                        </constraints>
+                                        <mutableString key="text">“Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
 
 “Lion Emoji.” Emojipedia, Emojipedia Party Ltd., emojipedia-us.s3.amazonaws.com/cache/3b/be/3bbe9f3b14de7e8978e1ce75a1d86860.png. Accessed 9 Aug. 2016. This image represents the lion in the running screen.
 
@@ -436,25 +446,53 @@ Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com
 “Swift 2.0 Programming Language Tutorial.” YouTube, uploaded by Funza Academy, www.youtube.com/watch?v=RKfe7xzHEZk. Accessed 5 Aug. 2016. This tutorial explains “AVFoundation : AVAudioPlayer , NSURL, NSBundle and more”, so we used it to learn how to use sound in an app.
 
 Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.
+</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xjJ-dC-o1w" secondAttribute="bottom" constant="-226" id="QNj-iy-AFS"/>
+                                    <constraint firstItem="xjJ-dC-o1w" firstAttribute="centerX" secondItem="5IG-5j-4Oh" secondAttribute="centerX" id="SwW-1p-p5G"/>
+                                    <constraint firstItem="xjJ-dC-o1w" firstAttribute="top" secondItem="5IG-5j-4Oh" secondAttribute="top" id="T3H-0N-1ht"/>
+                                    <constraint firstItem="xjJ-dC-o1w" firstAttribute="leading" secondItem="5IG-5j-4Oh" secondAttribute="leading" id="VhJ-fi-4xj"/>
+                                    <constraint firstAttribute="trailing" secondItem="xjJ-dC-o1w" secondAttribute="trailing" id="uSW-ba-L2x"/>
+                                </constraints>
+                            </scrollView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dEe-hJ-0ky" userLabel="About ">
+                                <rect key="frame" x="16" y="62" width="343" height="224"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dEe-hJ-0ky" secondAttribute="height" multiplier="335:219" id="qtp-Kh-G3D"/>
+                                </constraints>
+                                <string key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
+
+We would like to thank our teachers: Carolyn Aquino, Emma Lurie, and Maria Galebach. Also a huge shoutout to Matt whose last name we don't know for his immensely valuable help in debugging and learning our way around Xcode.
+
+The ROARDASH logo was created using sketch.io. Backgrounds were made with Trianglify.
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dEe-hJ-0ky" firstAttribute="trailing" secondItem="vS8-Mk-RPY" secondAttribute="trailingMargin" id="03i-Z9-XMm"/>
+                            <constraint firstItem="dEe-hJ-0ky" firstAttribute="top" secondItem="hfQ-wK-VWP" secondAttribute="bottom" constant="8" symbolic="YES" id="20e-pX-wlb"/>
                             <constraint firstItem="hfQ-wK-VWP" firstAttribute="leading" secondItem="vS8-Mk-RPY" secondAttribute="leadingMargin" constant="4" id="34B-F5-IoQ"/>
-                            <constraint firstItem="hfQ-wK-VWP" firstAttribute="leading" secondItem="xjJ-dC-o1w" secondAttribute="leading" id="AFX-mL-41v"/>
-                            <constraint firstItem="xjJ-dC-o1w" firstAttribute="top" secondItem="hfQ-wK-VWP" secondAttribute="bottom" constant="8" symbolic="YES" id="GqW-4l-G5K"/>
-                            <constraint firstItem="xjJ-dC-o1w" firstAttribute="centerX" secondItem="vS8-Mk-RPY" secondAttribute="centerX" id="QB4-ZN-h2v"/>
+                            <constraint firstItem="Kvj-4P-4Wn" firstAttribute="top" secondItem="5IG-5j-4Oh" secondAttribute="bottom" constant="13" id="3oK-E5-iHo"/>
+                            <constraint firstItem="dEe-hJ-0ky" firstAttribute="leading" secondItem="vS8-Mk-RPY" secondAttribute="leadingMargin" id="9tV-OV-zRe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5IG-5j-4Oh" secondAttribute="trailing" constant="-4" id="m0G-l1-hSJ"/>
+                            <constraint firstItem="5IG-5j-4Oh" firstAttribute="top" secondItem="dEe-hJ-0ky" secondAttribute="bottom" id="rxl-ol-AM4"/>
                             <constraint firstItem="hfQ-wK-VWP" firstAttribute="top" secondItem="WZA-L1-OrL" secondAttribute="bottom" id="v4u-eV-BCC"/>
+                            <constraint firstItem="5IG-5j-4Oh" firstAttribute="leading" secondItem="hfQ-wK-VWP" secondAttribute="leading" id="vRD-O4-psV"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIV-pB-ozZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-125.5" y="1232.5"/>
+            <point key="canvasLocation" x="-145.5" y="1248.5"/>
         </scene>
     </scenes>
     <resources>
@@ -464,7 +502,6 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
         <image name="trophy_emoji.png" width="435" height="525"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kI8-0h-tsX"/>
-        <segue reference="yat-7s-tx4"/>
+        <segue reference="zpe-AH-b9I"/>
     </inferredMetricsTieBreakers>
 </document>
