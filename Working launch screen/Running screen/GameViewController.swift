@@ -205,7 +205,7 @@ class GameViewController: UIViewController, CLLocationManagerDelegate {
             //Allows user to keep playing their background music
             let sess = AVAudioSession.sharedInstance()
             if sess.otherAudioPlaying {
-                _ = try? sess.setCategory(AVAudioSessionCategoryAmbient, withOptions: .DuckOthers)
+                _ = try? sess.setCategory(AVAudioSessionCategoryAmbient, withOptions: .MixWithOthers)
                 _ = try? sess.setActive(true, withOptions: [])
             }
             
