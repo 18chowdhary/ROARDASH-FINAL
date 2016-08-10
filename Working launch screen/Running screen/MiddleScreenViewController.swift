@@ -12,14 +12,12 @@ import UIKit
 class MiddleScreenViewController : UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var goalPaceTextField: UITextField!
-    
     @IBOutlet weak var nextButton: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.titleLabel?.textColor = UIColor.redColor()
-     //   nextButton.enabled = false
+//        nextButton.enabled = false
         goalPaceTextField.keyboardType = .DecimalPad
         goalPaceTextField.delegate = self
         self.view.backgroundColor = UIColor(patternImage:UIImage(named: "pattern.png")!)
@@ -33,6 +31,7 @@ class MiddleScreenViewController : UIViewController, UITextFieldDelegate{
         var DestView : GameViewController = segue.destinationViewController as!GameViewController
         DestView.goalPace = goalPaceTextField.text!
     }
+//We tried to do this with Matt; the enable/disenable feature of the button did not end up working. The code is correct in theory but does not allow the user to advance to Running Scene
     
 //    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
 ////        if goalPaceTextField.text!.isEmpty && string.isEmpty{

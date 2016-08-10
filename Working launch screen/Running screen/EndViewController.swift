@@ -1,5 +1,5 @@
 //
-//  GeneralViewController.swift
+//  EndViewController.swift
 //  Running screen
 //
 //  Created by Girls Who Code on 8/9/16.
@@ -11,7 +11,8 @@ import UIKit
 
 class EndViewController : UIViewController {
     override func viewDidLoad() {
-        self.view.backgroundColor = UIColor(patternImage:UIImage(named: "pattern_2.png")!)
+        //Background for the End Scene
+        self.view.backgroundColor = UIColor(patternImage:UIImage(named: "pattern_3.png")!)
 
     }
 }

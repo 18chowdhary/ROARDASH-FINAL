@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+//Pretty sure none of this code does anything
 
 class ViewController : UIViewController {
     // Create audio player

@@ -24,8 +24,7 @@
  I was feeling kind of experimentative so I decided to play around with making an image a button. It's actually really easy; in the Storyboard, I clicked on the button "Tap to start Roardash" and opened up the side panel. There was a dropdown option labeled Image, and when I clicked on that, I could choose a picture to be the button. I chose my baby-bunny.jpg, which I dragged into this project. When I ran the project, "Tap to start ROARDASH" was replaced with my baby-bunny.jpg. :D I'm thinking we can replace baby-bunny.jpg with our logo and have the user click the logo to start :)
  
  - UPDATE #3: at GWC
- I added a background-gradient. In order to do so, I first dragged in the red-black-gradient.png and created a Sprite Node that fills up the screen with this image. I then changed its zPosition and the lion and user's zPositions so they're above this sprite and the backgroud image will not cover the sprites. 
- 
+ I added a background-gradient. In order to do so, I first dragged in the red-black-gradient.png and created a Sprite Node that fills up the screen with this image. I then changed its zPosition and the lion and user's zPositions so they're above this sprite and the backgroud image will not cover the sprites.
  
  */
 //  Created by Girls Who Code on 8/2/16.
@@ -34,43 +33,30 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    // Creating lion & user
+    //Creating lion & user
     let lion = SKSpriteNode(imageNamed: "lion_icon")
     let user = SKSpriteNode(imageNamed: "apple_emoji_runner.png")
-    let background = SKSpriteNode(imageNamed: "pretty blue gradient.jpg")
+    let background = SKSpriteNode(imageNamed: "pattern_2.jpg")
     
-    // Random positions & arcs (Kept if we need it in the future)
-//    func random() -> CGFloat {
-//        return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
-//    }
     
-//    func random(min min: CGFloat, max: CGFloat) -> CGFloat {
-//        return random() * (max - min) + min
-//    }
-    
-    // Main animation displays automatically when app runs
+    //Main animation displays automatically when app runs
     override func didMoveToView(view: SKView) {
         background.zPosition = 0
         background.position = CGPoint(x: frame.size.width/2, y: frame.size.height/2)
         addChild(background)
         
-        // Making lion appear on screen
-        // Setting initial position of lion
-        
+        //Set the layer of the lion
         lion.zPosition = 2
         lion.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
-        
-        // Making lion appear
+        //Making lion appear
         addChild(lion)
         
-        // Making user appear on screen
-        // Set position
+        //Set position of the user
         user.zPosition = 1
         user.position = CGPoint(x: size.width * 0.5, y: size.height * 0.85)
-        // Making user appear
+        //Making user appear
         addChild(user)
         
     }
     
-   
 }
