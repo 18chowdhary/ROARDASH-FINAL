@@ -21,7 +21,7 @@ class HomeScreenViewController : UIViewController {
     override func viewDidLoad() {
         
         func random() -> Int {
-            return Int(Float(arc4random_uniform(35)))
+            return Int(Float(arc4random_uniform(29)))
         }
         
         func displayMessage() {
