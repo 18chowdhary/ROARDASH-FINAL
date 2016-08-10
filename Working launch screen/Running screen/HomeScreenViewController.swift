@@ -20,6 +20,8 @@ class HomeScreenViewController : UIViewController {
     
     override func viewDidLoad() {
         
+        self.view.backgroundColor = UIColor(patternImage:UIImage(named: "pattern_4.png")!)
+        
         func random() -> Int {
             return Int(Float(arc4random_uniform(29)))
         }

@@ -52,7 +52,7 @@
                                     <segue destination="zpk-ab-KpR" kind="showDetail" id="zDD-9G-n4P"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROARDASH_FINAL.png" translatesAutoresizingMaskIntoConstraints="NO" id="4zZ-Z5-h7P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO_FINA_whitebackground.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4zZ-Z5-h7P">
                                 <rect key="frame" x="0.0" y="85" width="375" height="234"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4zZ-Z5-h7P" secondAttribute="height" multiplier="125:78" id="Sqa-N8-Y86"/>
@@ -415,7 +415,7 @@
                                     <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5v6-3x-WGG">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="945"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
+                                        <string key="text">This app was created by Arushi Bhalchandra, Shreya Chowdhary, Rowan Macy and Danielle Rossetti at Girls Who Code 2016. 
 
 We would like to thank our teachers: Carolyn Aquino, Emma Lurie, and Maria Galebach. Also a huge shoutout to Matt whose last name we don't know for his immensely valuable help in debugging and learning our way around Xcode.
 
@@ -435,7 +435,7 @@ Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com
 
 Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.
 
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -451,7 +451,7 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
         </scene>
     </scenes>
     <resources>
-        <image name="ROARDASH_FINAL.png" width="1200" height="777"/>
+        <image name="LOGO_FINA_whitebackground.jpg" width="1200" height="777"/>
         <image name="left-orange-arrow.png" width="64" height="64"/>
         <image name="right-orange-arrow.png" width="64" height="64"/>
         <image name="trophy_emoji.png" width="435" height="525"/>
