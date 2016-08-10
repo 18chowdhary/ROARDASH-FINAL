@@ -431,7 +431,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="594" id="S4N-l4-3JW"/>
                                         </constraints>
-                                        <mutableString key="text">“Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
+                                        <string key="text">“Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
 
 “Lion Emoji.” Emojipedia, Emojipedia Party Ltd., emojipedia-us.s3.amazonaws.com/cache/3b/be/3bbe9f3b14de7e8978e1ce75a1d86860.png. Accessed 9 Aug. 2016. This image represents the lion in the running screen.
 
@@ -446,7 +446,7 @@ Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com
 “Swift 2.0 Programming Language Tutorial.” YouTube, uploaded by Funza Academy, www.youtube.com/watch?v=RKfe7xzHEZk. Accessed 5 Aug. 2016. This tutorial explains “AVFoundation : AVAudioPlayer , NSURL, NSBundle and more”, so we used it to learn how to use sound in an app.
 
 Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -460,7 +460,7 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
                                     <constraint firstAttribute="trailing" secondItem="xjJ-dC-o1w" secondAttribute="trailing" id="uSW-ba-L2x"/>
                                 </constraints>
                             </scrollView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dEe-hJ-0ky" userLabel="About ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dEe-hJ-0ky" userLabel="About ">
                                 <rect key="frame" x="16" y="62" width="343" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
