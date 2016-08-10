@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC60C4021D50E14300928292"
-               BuildableName = "Running screen.app"
-               BlueprintName = "Running screen"
-               ReferencedContainer = "container:Running screen.xcodeproj">
+               BuildableName = "ROARDASH.app"
+               BlueprintName = "ROARDASH"
+               ReferencedContainer = "container:ROARDASH.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC60C41A1D50E14300928292"
-               BuildableName = "Running screenTests.xctest"
-               BlueprintName = "Running screenTests"
-               ReferencedContainer = "container:Running screen.xcodeproj">
+               BuildableName = "ROARDASH.xctest"
+               BlueprintName = "ROARDASHTests"
+               ReferencedContainer = "container:ROARDASH.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CC60C4251D50E14300928292"
-               BuildableName = "Running screenUITests.xctest"
-               BlueprintName = "Running screenUITests"
-               ReferencedContainer = "container:Running screen.xcodeproj">
+               BuildableName = "ROARDASH.xctest"
+               BlueprintName = "ROARDASHUITests"
+               ReferencedContainer = "container:ROARDASH.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC60C4021D50E14300928292"
-            BuildableName = "Running screen.app"
-            BlueprintName = "Running screen"
-            ReferencedContainer = "container:Running screen.xcodeproj">
+            BuildableName = "ROARDASH.app"
+            BlueprintName = "ROARDASH"
+            ReferencedContainer = "container:ROARDASH.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC60C4021D50E14300928292"
-            BuildableName = "Running screen.app"
-            BlueprintName = "Running screen"
-            ReferencedContainer = "container:Running screen.xcodeproj">
+            BuildableName = "ROARDASH.app"
+            BlueprintName = "ROARDASH"
+            ReferencedContainer = "container:ROARDASH.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CC60C4021D50E14300928292"
-            BuildableName = "Running screen.app"
-            BlueprintName = "Running screen"
-            ReferencedContainer = "container:Running screen.xcodeproj">
+            BuildableName = "ROARDASH.app"
+            BlueprintName = "ROARDASH"
+            ReferencedContainer = "container:ROARDASH.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -10,7 +10,7 @@
         <!--Home-->
         <scene sceneID="xe9-ON-tT0">
             <objects>
-                <viewController id="t9W-ib-En6" userLabel="Home" customClass="HomeScreenViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t9W-ib-En6" userLabel="Home" customClass="HomeScreenViewController" customModule="ROARDASH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BhL-EH-2jV"/>
                         <viewControllerLayoutGuide type="bottom" id="37y-jt-hF1"/>
@@ -45,7 +45,7 @@
                                     <segue destination="KPr-aj-1pS" kind="showDetail" id="VIu-es-Ysa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-Lc-NeN" userLabel="Forward Arrow">
                                 <rect key="frame" x="155" y="354" width="64" height="64"/>
                                 <state key="normal" image="right-orange-arrow.png"/>
                                 <connections>
@@ -86,7 +86,7 @@
         <!--Middle View Controller-->
         <scene sceneID="csG-4Z-v6B">
             <objects>
-                <viewController id="zpk-ab-KpR" userLabel="Middle View Controller" customClass="MiddleScreenViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zpk-ab-KpR" userLabel="Middle View Controller" customClass="MiddleScreenViewController" customModule="ROARDASH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="imt-SH-nxS"/>
                         <viewControllerLayoutGuide type="bottom" id="Q8V-5T-hXm"/>
@@ -196,7 +196,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="ROARDASH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
@@ -333,7 +333,7 @@
         <!--End Screen Controller-->
         <scene sceneID="uex-98-CJp">
             <objects>
-                <viewController id="9G9-e1-3jD" userLabel="End Screen Controller" customClass="EndViewController" customModule="Running_screen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9G9-e1-3jD" userLabel="End Screen Controller" customClass="EndViewController" customModule="ROARDASH" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2P7-0j-VZb"/>
                         <viewControllerLayoutGuide type="bottom" id="Qfz-IS-2W1"/>
@@ -431,7 +431,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="594" id="S4N-l4-3JW"/>
                                         </constraints>
-                                        <mutableString key="text">“Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
+                                        <string key="text">“Left Chevron Icon.” Web Artsenal, webartesanal.com/lima-soul-demo/templates/Orange/HTML/img/icon-set/64x64/icon-chevron-left.png. Accessed 9 Aug. 2016. This image was used for the forward and back arrows in our app.
 
 “Lion Emoji.” Emojipedia, Emojipedia Party Ltd., emojipedia-us.s3.amazonaws.com/cache/3b/be/3bbe9f3b14de7e8978e1ce75a1d86860.png. Accessed 9 Aug. 2016. This image represents the lion in the running screen.
 
@@ -446,7 +446,7 @@ Rohif, Quinn. Trianglify Blue Background. Vector Graph It, www.vectorgraphit.com
 “Swift 2.0 Programming Language Tutorial.” YouTube, uploaded by Funza Academy, www.youtube.com/watch?v=RKfe7xzHEZk. Accessed 5 Aug. 2016. This tutorial explains “AVFoundation : AVAudioPlayer , NSURL, NSBundle and more”, so we used it to learn how to use sound in an app.
 
 Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich, Razeware, 30 Oct. 2015, www.raywenderlich.com/119815/sprite-kit-swift-2-tutorial-for-beginners. Accessed 2 Aug. 2016. This is the very first tutorial we did to learn Swift.
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <dataDetectorType key="dataDetectorTypes" link="YES"/>

@@ -56,17 +56,17 @@
 		CC4BBC0A1D58BEC300447767 /* MiddleScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleScreenViewController.swift; sourceTree = "<group>"; };
 		CC5AA25A1D58D57F00D45FAD /* SoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundViewController.swift; sourceTree = "<group>"; };
 		CC5C090F1D5A681D00C8F92F /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
-		CC60C4031D50E14300928292 /* Running screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Running screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC60C4031D50E14300928292 /* ROARDASH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROARDASH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60C4061D50E14300928292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC60C40A1D50E14300928292 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CC60C40C1D50E14300928292 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CC60C40F1D50E14300928292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC60C4141D50E14300928292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC60C4161D50E14300928292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC60C41B1D50E14300928292 /* Running screenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Running screenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC60C41B1D50E14300928292 /* ROARDASH.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROARDASH.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60C41F1D50E14300928292 /* Running_screenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running_screenTests.swift; sourceTree = "<group>"; };
 		CC60C4211D50E14300928292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC60C4261D50E14300928292 /* Running screenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Running screenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC60C4261D50E14300928292 /* ROARDASH.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROARDASH.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC60C42A1D50E14300928292 /* Running_screenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running_screenUITests.swift; sourceTree = "<group>"; };
 		CC60C42C1D50E14300928292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC796D241D5AB6F6000D962C /* EndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
@@ -119,9 +119,9 @@
 		CC60C4041D50E14300928292 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC60C4031D50E14300928292 /* Running screen.app */,
-				CC60C41B1D50E14300928292 /* Running screenTests.xctest */,
-				CC60C4261D50E14300928292 /* Running screenUITests.xctest */,
+				CC60C4031D50E14300928292 /* ROARDASH.app */,
+				CC60C41B1D50E14300928292 /* ROARDASH.xctest */,
+				CC60C4261D50E14300928292 /* ROARDASH.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,9 +176,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC60C4021D50E14300928292 /* Running screen */ = {
+		CC60C4021D50E14300928292 /* ROARDASH */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC60C42F1D50E14300928292 /* Build configuration list for PBXNativeTarget "Running screen" */;
+			buildConfigurationList = CC60C42F1D50E14300928292 /* Build configuration list for PBXNativeTarget "ROARDASH" */;
 			buildPhases = (
 				CC60C3FF1D50E14300928292 /* Sources */,
 				CC60C4001D50E14300928292 /* Frameworks */,
@@ -188,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = "Running screen";
+			name = ROARDASH;
 			productName = "Running screen";
-			productReference = CC60C4031D50E14300928292 /* Running screen.app */;
+			productReference = CC60C4031D50E14300928292 /* ROARDASH.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC60C41A1D50E14300928292 /* Running screenTests */ = {
+		CC60C41A1D50E14300928292 /* ROARDASHTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC60C4321D50E14300928292 /* Build configuration list for PBXNativeTarget "Running screenTests" */;
+			buildConfigurationList = CC60C4321D50E14300928292 /* Build configuration list for PBXNativeTarget "ROARDASHTests" */;
 			buildPhases = (
 				CC60C4171D50E14300928292 /* Sources */,
 				CC60C4181D50E14300928292 /* Frameworks */,
@@ -206,14 +206,14 @@
 			dependencies = (
 				CC60C41D1D50E14300928292 /* PBXTargetDependency */,
 			);
-			name = "Running screenTests";
+			name = ROARDASHTests;
 			productName = "Running screenTests";
-			productReference = CC60C41B1D50E14300928292 /* Running screenTests.xctest */;
+			productReference = CC60C41B1D50E14300928292 /* ROARDASH.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CC60C4251D50E14300928292 /* Running screenUITests */ = {
+		CC60C4251D50E14300928292 /* ROARDASHUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC60C4351D50E14300928292 /* Build configuration list for PBXNativeTarget "Running screenUITests" */;
+			buildConfigurationList = CC60C4351D50E14300928292 /* Build configuration list for PBXNativeTarget "ROARDASHUITests" */;
 			buildPhases = (
 				CC60C4221D50E14300928292 /* Sources */,
 				CC60C4231D50E14300928292 /* Frameworks */,
@@ -224,9 +224,9 @@
 			dependencies = (
 				CC60C4281D50E14300928292 /* PBXTargetDependency */,
 			);
-			name = "Running screenUITests";
+			name = ROARDASHUITests;
 			productName = "Running screenUITests";
-			productReference = CC60C4261D50E14300928292 /* Running screenUITests.xctest */;
+			productReference = CC60C4261D50E14300928292 /* ROARDASH.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -253,7 +253,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CC60C3FE1D50E14300928292 /* Build configuration list for PBXProject "Running screen" */;
+			buildConfigurationList = CC60C3FE1D50E14300928292 /* Build configuration list for PBXProject "ROARDASH" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -266,9 +266,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC60C4021D50E14300928292 /* Running screen */,
-				CC60C41A1D50E14300928292 /* Running screenTests */,
-				CC60C4251D50E14300928292 /* Running screenUITests */,
+				CC60C4021D50E14300928292 /* ROARDASH */,
+				CC60C41A1D50E14300928292 /* ROARDASHTests */,
+				CC60C4251D50E14300928292 /* ROARDASHUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -347,12 +347,12 @@
 /* Begin PBXTargetDependency section */
 		CC60C41D1D50E14300928292 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC60C4021D50E14300928292 /* Running screen */;
+			target = CC60C4021D50E14300928292 /* ROARDASH */;
 			targetProxy = CC60C41C1D50E14300928292 /* PBXContainerItemProxy */;
 		};
 		CC60C4281D50E14300928292 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC60C4021D50E14300928292 /* Running screen */;
+			target = CC60C4021D50E14300928292 /* ROARDASH */;
 			targetProxy = CC60C4271D50E14300928292 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -471,7 +471,7 @@
 				INFOPLIST_FILE = "Running screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen-lion";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ROARDASH;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -485,7 +485,7 @@
 				INFOPLIST_FILE = "Running screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screen-lion";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ROARDASH;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -498,8 +498,8 @@
 				INFOPLIST_FILE = "Running screenTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screenTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Running screen.app/Running screen";
+				PRODUCT_NAME = ROARDASH;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROARDASH.app/ROARDASH";
 			};
 			name = Debug;
 		};
@@ -510,8 +510,8 @@
 				INFOPLIST_FILE = "Running screenTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screenTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Running screen.app/Running screen";
+				PRODUCT_NAME = ROARDASH;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROARDASH.app/ROARDASH";
 			};
 			name = Release;
 		};
@@ -522,7 +522,7 @@
 				INFOPLIST_FILE = "Running screenUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screenUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ROARDASH;
 				TEST_TARGET_NAME = "Running screen";
 			};
 			name = Debug;
@@ -533,7 +533,7 @@
 				INFOPLIST_FILE = "Running screenUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Roardash.Running-screenUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ROARDASH;
 				TEST_TARGET_NAME = "Running screen";
 			};
 			name = Release;
@@ -541,7 +541,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC60C3FE1D50E14300928292 /* Build configuration list for PBXProject "Running screen" */ = {
+		CC60C3FE1D50E14300928292 /* Build configuration list for PBXProject "ROARDASH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC60C42D1D50E14300928292 /* Debug */,
@@ -550,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC60C42F1D50E14300928292 /* Build configuration list for PBXNativeTarget "Running screen" */ = {
+		CC60C42F1D50E14300928292 /* Build configuration list for PBXNativeTarget "ROARDASH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC60C4301D50E14300928292 /* Debug */,
@@ -559,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC60C4321D50E14300928292 /* Build configuration list for PBXNativeTarget "Running screenTests" */ = {
+		CC60C4321D50E14300928292 /* Build configuration list for PBXNativeTarget "ROARDASHTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC60C4331D50E14300928292 /* Debug */,
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC60C4351D50E14300928292 /* Build configuration list for PBXNativeTarget "Running screenUITests" */ = {
+		CC60C4351D50E14300928292 /* Build configuration list for PBXNativeTarget "ROARDASHUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC60C4361D50E14300928292 /* Debug */,
