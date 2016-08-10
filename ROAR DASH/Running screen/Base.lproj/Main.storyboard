@@ -412,8 +412,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhe-Rn-MUf">
                                 <rect key="frame" x="0.0" y="8" width="375" height="1403"/>
                                 <subviews>
-                                    <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5v6-3x-WGG">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="945"/>
+                                    <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v6-3x-WGG">
+                                        <rect key="frame" x="0.0" y="51" width="375" height="945"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 <<<<<<< HEAD:ROAR DASH/Running screen/Base.lproj/Main.storyboard
                                         <constraints>
@@ -451,6 +451,13 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
 >>>>>>> origin/master:Working launch screen/Running screen/Base.lproj/Main.storyboard
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bf9-5Q-auB">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="58"/>
+                                        <state key="normal" image="left-orange-arrow.png"/>
+                                        <connections>
+                                            <segue destination="t9W-ib-En6" kind="showDetail" id="ub0-yt-6Lq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -459,7 +466,7 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIV-pB-ozZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-145.5" y="1248.5"/>
+            <point key="canvasLocation" x="-453.5" y="1425.5"/>
         </scene>
     </scenes>
     <resources>
@@ -469,6 +476,6 @@ Wenderlich, Ray. “Sprite Kit Swift 2 Tutorial for Beginners.” Ray Wenderlich
         <image name="trophy_emoji.png" width="435" height="525"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zpe-AH-b9I"/>
+        <segue reference="ub0-yt-6Lq"/>
     </inferredMetricsTieBreakers>
 </document>
